@@ -1,0 +1,51 @@
+.catalog {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  background: $border-color;
+  .container {
+    max-width: rem(904);
+  }
+  .btn {
+    padding: {
+      left: rem(40);
+      right: rem(40);
+    }
+  }
+}
+
+.catalog__container {
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  border-radius: rem(8);
+  background: url('../img/coffee/coffee-bean.png') no-repeat;
+  background-size: cover;
+  padding: rem(50) rem(80) rem(56);
+}
+
+.catalog__catalog-text {
+  font-size: rem(32);
+  line-height: 1.25;
+  font-weight: 500;
+  margin-bottom: rem(50);
+}
+
+@media (max-width: 540px) {
+  .catalog {
+    padding: rem(32) 0;
+  }
+  .catalog__catalog-text {
+    font-size: rem(24);
+    max-width: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .catalog__container {
+    padding: {
+      left: rem(40);
+      right: rem(40);
+    };
+    background-position-x: rem(-200);
+  }
+}

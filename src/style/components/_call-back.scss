@@ -1,0 +1,47 @@
+.call-back {
+  position: fixed;
+  z-index: 3;
+  width: rem(82);
+  height: rem(82);
+  border: 8px solid $rose;
+  border-radius: 50%;
+  background: #fff;
+  right: rem(80);
+  bottom: 20px;
+  cursor: pointer;
+  svg {
+    width: rem(36);
+    height: rem(36);
+    position: absolute;
+    top: rem(16);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1080px) {
+  .call-back {
+    right: 20px;
+    bottom: 90px;
+    width: 50px;
+    height: 50px;
+    svg {
+      width: rem(30);
+      height: rem(30);
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .call-back {
+    border-width: 5px;
+    svg {
+      width: rem(30);
+      height: rem(30);
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.range {
+  .rangeslider--horizontal {
+    background: $border-color;
+    border-radius: rem(2);
+    height: rem(8);
+    box-shadow: none;
+  }
+  .rangeslider__fill {
+    box-shadow: none;
+    border-radius: rem(2);
+    background: $blue;
+  }
+  .rangeslider__handle {
+    background: $rose;
+    border-radius: rem(2);
+    border: none;
+    box-shadow: none;
+    width: rem(18);
+    height: rem(18);
+    top: 50%;
+    transform: translateY(-50%);
+    &:after {
+      border-radius: 0;
+      width: rem(9);
+      height: rem(8);
+      left: 50%;
+      transform: translate(-50%);
+      background-image: linear-gradient(to right, #fff 25%, $rose 25%, $rose 75%, #fff 75%);
+    }
+  }
+}

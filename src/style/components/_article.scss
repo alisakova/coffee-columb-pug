@@ -1,0 +1,124 @@
+.article {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  background: #fff;
+  .container {
+    max-width: rem(900);
+  }
+  p {
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $blue;
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+  h2 {
+    margin-bottom: rem(56);
+    font-size: rem(46);
+    line-height: 1;
+    text-align: left;
+    letter-spacing: -1px;
+    @media (max-width: 540px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.article__text {
+  .bold {
+    font-weight: 500;
+  }
+}
+
+.article__main-img {
+  margin-bottom: rem(96);
+  max-width: 100%;
+  img {
+    object-fit: cover;
+  }
+}
+
+.article__text-img {
+  max-width: rem(304);
+  min-width: rem(304);
+  margin-right: rem(32);
+  &_no-max-width {
+    max-width: none;
+    margin: {
+      right: 0;
+      bottom: rem(32);
+    }
+  }
+}
+
+.article__paragraph {
+  margin-bottom: rem(56);
+  h2 {
+    text-align: left;
+    margin-bottom: rem(32);
+  }
+  &.article__paragraph_with-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: rem(75);
+    &_column {
+      flex-direction: column;
+    }
+  }
+}
+
+.article__mark {
+  border-radius: rem(8);
+  background: $gray-bg-color;
+  padding: rem(24) rem(32);
+  margin: 0 rem(-40);
+}
+
+@media (max-width: 860px) {
+  .article__mark {
+    margin: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .article {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+  }
+  .article__paragraph {
+    margin-bottom: rem(32);
+    &.article__paragraph_with-img {
+      margin-bottom: rem(32);
+    }
+  }
+  .article__paragraph_with-img {
+    flex-direction: column;
+  }
+  .article__text-img {
+    margin: {
+      right: 0;
+      bottom: rem(24);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .article__main-img {
+    margin-bottom: rem(32);
+    & + h2 {
+      font-size: rem(38);
+      margin-bottom: rem(32);
+    }
+  }
+  .article__text-img {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,155 @@
+.features {
+  text-align: center;
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  .container {
+    max-width: rem(1016);
+  }
+  &.food {
+    .container {
+      max-width: rem(1350);
+    }
+    .features__item {
+      // cursor: pointer;
+      transition: border-color 250ms;
+      padding: {
+        left: rem(16);
+        right: rem(16);
+      }
+    }
+    .features__item-caption {
+      margin-bottom: 0;
+    }
+    .features__icon {
+      min-height: rem(80);
+      height: rem(80);
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.features__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.features__item {
+  border: 1px solid $border-color;
+  border-radius: rem(8);
+  width: 33.333%;
+  padding: rem(48) rem(32) rem(39);
+  &:not(:last-child) {
+    margin-right: rem(32);
+  }
+}
+
+.features__icon {
+  margin: 0 auto rem(32);
+  img {
+    margin: 0 auto;
+  }
+}
+
+.features__item-caption {
+  font-size: rem(18);
+  line-height: 1.3;
+  font-weight: 500;
+  margin-bottom: rem(10);
+}
+
+.features__descr {
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $gray-text-color;
+}
+
+@media (max-width: 1080px) {
+  .features {
+    &.food {
+      .features__item {
+        padding: {
+          left: rem(8);
+          right: rem(8);
+        };
+        &:not(:last-child) {
+          margin-right: rem(16);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .features {
+    &.food {
+      .features__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: rem(-16);
+        margin-right: rem(-16);
+      }
+      .features__item {
+        max-width: 30%;
+        min-width: 30%;
+        margin-bottom: rem(16);
+        margin-right: rem(16);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    &.food {
+      .features__icon {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .features {
+    padding: rem(32) 0;
+    &.coffee {
+      .features__icon {
+        max-width: rem(65);
+      }
+    }
+    &.food {
+      .container {
+        max-width: none;
+      }
+      .features__container {
+        margin-right: rem(-16);
+      }
+      .features__item {
+        max-width: none;
+        min-width: 0;
+        width: 45%;
+        margin-right: rem(16);
+      }
+    }
+  }
+  .features__container {
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: 100%;
+    margin-bottom: rem(24);
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  .features__descr {
+    margin: 0 auto;
+    max-width: rem(250);
+  }
+}

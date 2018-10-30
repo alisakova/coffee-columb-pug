@@ -1,0 +1,24 @@
+.order-call {
+  background: $blue;
+  padding: rem(108) rem(20) rem(96);
+  h2 {
+    color: #fff;
+    margin-bottom: rem(36);
+  }
+  .call-btn {
+    margin: 0 auto;
+  }
+  &.coffee, &.food, &.office, &.coffee-catalog {
+    padding-top: rem(94);
+    h2 {
+      margin: 0 auto rem(34);
+      max-width: rem(640);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .order-call {
+    padding: rem(60) rem(20);
+  }
+}

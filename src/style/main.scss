@@ -1,0 +1,180 @@
+@import 'variables';
+@import 'util';
+@import 'mixins';
+
+html {
+	height: 100%;
+	font: 300 #{14px}/#{1.47} $main-font;
+}
+
+body,
+html {
+	height: 100%;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	display: block;
+	min-height: 100%;
+	min-width: 375px;
+	margin: 0;
+	font: inherit;
+	font-size: 100%;
+	color: $main-font-color;
+	background: #fff;
+	-webkit-text-size-adjust: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+	outline: none;
+}
+
+main {
+	position: relative;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 250ms;
+}
+
+button {
+	border: none;
+	padding: 0;
+	font-family: $main-font;
+	color: inherit;
+	cursor: pointer;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.container {
+	max-width: rem(1352);
+	padding: 0 rem(20);
+	margin: 0 auto;
+}
+
+h1 {
+	color: $main-font-color;
+	font-size: rem(48);
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.16;
+}
+
+h2 {
+	font-size: rem(32);
+	line-height: 1.25;
+	margin: 0 0 rem(76);
+	font-weight: 500;
+	text-align: center;
+}
+
+p {
+	font-size: rem(14);
+	line-height: 1.4;
+	text-align: left;
+	margin: 0;
+	color: $gray-text-color;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.section-name {
+	font-size: rem(14);
+	line-height: 2.28;
+	color: $gray-text-color;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	text-align: center;
+	display: block;
+	margin-bottom: rem(12);
+}
+
+.color-rose {
+	color: $rose;
+}
+
+@media (max-width: 1080px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 540px) {
+	h1 {
+		font-size: rem(40);
+	}
+	h2 {
+		margin-bottom: rem(40);
+	}
+}
+
+// @media (min-width: 1600px) {
+// 	html {
+// 		font-size: 20px;
+// 	}
+// }
+//
+// @media (min-width: 2000px) {
+// 	html {
+// 		font-size: 24px;
+// 	}
+// }
+
+@import "components/header";
+@import "components/call-btn";
+@import "components/dropdown";
+@import "components/first-slide";
+@import "components/btn-up";
+@import "components/call-back";
+@import "components/service";
+@import "components/btn";
+@import "components/features";
+@import "components/reviews";
+@import "components/reviews-slider";
+@import "components/offer";
+@import "components/order-call";
+@import "components/info";
+@import "components/coffee-machine";
+@import "components/catalog";
+@import "components/amount";
+@import "components/range";
+@import "components/products";
+@import "components/office-catalog";
+@import "components/accordion";
+@import "components/about-info";
+@import "components/contacts";
+@import "components/contact-form";
+@import "components/form";
+@import "components/coffee-catalog";
+@import "components/articles-list";
+@import "components/article";
+@import "components/back-btn";
+@import "components/news-slider";
+@import "components/coffee-descr";
+@import "components/call-modal";
+@import "components/privacy-policy";
+@import "components/coffee-machine-slider";
+@import "components/footer";

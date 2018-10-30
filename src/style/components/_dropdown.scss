@@ -1,0 +1,120 @@
+.dropdown {
+  position: relative;
+  font-weight: 500;
+  &:hover, &:focus, &:active {
+    & > .dropdown__toggle {
+      background-color: $gray-bg-color;
+    }
+    & > .dropdown__menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown__toggle {
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: rem(14);
+  font-weight: 500;
+  padding: rem(34 36 34 16);
+  position: relative;
+  margin: 0;
+  line-height: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    right: rem(15);
+    top: 50%;
+    width: rem(12);
+    height: rem(8);
+    transform: translateY(-50%);
+    background: url('../img/chevron.svg') no-repeat;
+    background-size: cover;
+  }
+}
+
+.dropdown__menu {
+  display: none;
+  background: $gray-bg-color;
+  padding: rem(32) 0;
+  position: absolute;
+  z-index: 4;
+  top: 100%;
+  right: 0;
+  border-bottom-right-radius: rem(12);
+  border-bottom-left-radius: rem(12);
+  min-width: rem(168);
+}
+
+.dropdown__item {
+  a {
+    display: block;
+    padding: 0 rem(36);
+    line-height: 1.7;
+    &:hover, &:focus, &:active {
+      color: $gray-text-color;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.internal-page {
+  .dropdown {
+    &:hover, &:focus, &:active {
+      & > .dropdown__toggle {
+        background-color: $border-color;
+      }
+    }
+  }
+  .dropdown__menu {
+    background-color: $border-color;
+  }
+}
+
+@media (max-width: 868px) {
+  .dropdown__toggle {
+    font-size: rem(12);
+    padding: {
+      top: rem(35);
+      bottom: rem(35);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown__toggle {
+    padding: {
+      top: rem(36);
+      bottom: rem(36);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .dropdown__menu {
+    padding: rem(24) 0;
+  }
+  .dropdown__toggle {
+    &:after {
+      width: rem(11);
+      height: rem(7);
+    }
+  }
+  .dropdown__item {
+    a {
+      padding: 0 rem(24);
+    }
+  }
+  .dropdown {
+    &:hover, &:focus, &:active {
+      & > .dropdown__toggle {
+        background-color: $border-color;
+      }
+    }
+  }
+  .dropdown__menu {
+    background-color: $border-color;
+  }
+}

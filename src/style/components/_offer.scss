@@ -1,0 +1,43 @@
+.offer {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  background: $darken-gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+}
+
+.offer__container {
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  border-radius: rem(8);
+  background: url('../img/index/coffee-bg.png') no-repeat;
+  background-size: cover;
+  padding: rem(64) rem(80) rem(65);
+}
+
+.offer__offer-text {
+  font-size: rem(48);
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: rem(70);
+  max-width: rem(448);
+}
+
+@media (max-width: 540px) {
+  .offer {
+    padding: rem(32) 0;
+  }
+  .offer__offer-text {
+    font-size: rem(32);
+    max-width: rem(300);
+  }
+}
+
+@media (max-width: 450px) {
+  .offer__container {
+    padding-left: rem(40);
+    background-position-x: rem(-120);
+  }
+}

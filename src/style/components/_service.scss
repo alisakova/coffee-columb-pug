@@ -1,0 +1,147 @@
+.service {
+  padding: rem(96) 0 rem(106);
+  background: $gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+}
+
+.service__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__block {
+  border-radius: rem(8);
+  padding: rem(64) rem(72) rem(17) rem(80);
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  &:first-child {
+    margin-bottom: rem(32);
+  }
+  &:nth-child(2) {
+    margin-right: rem(32);
+  }
+  &_rose {
+    background: $rose;
+  }
+  &_white {
+    background: #fff;
+  }
+  &_blue {
+    background: $blue;
+  }
+  &_width-100 {
+    width: 100%;
+  }
+  &_size_m {
+    max-width: rem(528);
+    min-width: rem(528);
+    padding-bottom: rem(56);
+    position: relative;
+  }
+  &_size_s {
+    max-width: rem(304);
+    min-width: rem(304);
+    padding: rem(48) rem(48) rem(56);
+    .service__list {
+      margin-bottom: rem(38);
+    }
+  }
+  &_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.service__col {
+  &:first-child {
+    max-width: rem(340);
+  }
+}
+
+.service__block-caption {
+  font-size: rem(48);
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: rem(26);
+  &_blue {
+    color: $blue;
+    margin-bottom: rem(8);
+  }
+  &_small-font-size {
+    font-size: rem(24);
+    line-height: 1;
+    margin-bottom: rem(23);
+  }
+}
+
+.service__descr {
+  font-size: rem(18);
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: rem(45);
+  &_blue {
+    color: $blue;
+    margin-bottom: rem(16);
+  }
+}
+
+.service__img {
+  max-width: rem(320);
+  min-width: rem(200);
+  margin-top: rem(-24);
+}
+
+.service__img-food {
+  position: absolute;
+  max-width: rem(272);
+  right: 0;
+  bottom: 0;
+}
+
+.service__list {
+  font-size: rem(18);
+  line-height: 1.3;
+  color: $gray-text-color;
+  margin-bottom: rem(45);
+}
+
+@media (max-width: 660px) {
+  .service__block {
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  .service__block_size_m,
+  .service__block_size_s {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+  .service__block_size_m {
+    margin-bottom: rem(32);
+  }
+  .service__block_size_s {
+    padding: rem(64) rem(72) rem(56) rem(80);
+  }
+}
+
+@media (max-width: 540px) {
+  .service {
+    padding: rem(32) 0;
+    .container {
+      max-width: rem(1016);
+    }
+  }
+  .service__block {
+    padding: rem(30) rem(36) rem(32);
+  }
+  .service__block-caption {
+    font-size: rem(32);
+  }
+  .service__img {
+    margin: 0;
+  }
+}

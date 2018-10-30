@@ -1,0 +1,51 @@
+.reviews-slider {
+  .slick-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #fff;
+    padding: rem(34) rem(34) rem(32);
+    border-radius: rem(8);
+    box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+    margin: 0 rem(16);
+    opacity: 0.5;
+    transition: opacity 250ms;
+    cursor: pointer;
+    &.slick-current.slick-active {
+      opacity: 1;
+    }
+  }
+  .slick-list.draggable {
+  }
+  .slick-track {
+    margin: 0;
+  }
+}
+
+.reviews-slider__company-name {
+  font-size: rem(16);
+  line-height: 1.5;
+  margin-bottom: rem(16);
+}
+
+.reviews-slider__logo {
+  max-width: rem(128);
+  min-width: rem(92);
+  margin-right: rem(64);
+}
+
+.reviews-slider__text {
+  line-height: 1.43;
+}
+
+@media (max-width: 660px) {
+  .reviews-slider {
+    .slick-slide {
+      padding-top: rem(24);
+      flex-direction: column;
+    }
+  }
+  .reviews-slider__logo {
+    margin-right: 0;
+  }
+}

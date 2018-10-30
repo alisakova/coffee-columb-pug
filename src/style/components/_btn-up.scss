@@ -1,0 +1,21 @@
+.btn-up {
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background: $gray-text-color;
+  position: fixed;
+  z-index: 3;
+  left: rem(32);
+  bottom: rem(32);
+  display: none;
+  cursor: pointer;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &.active {
+    display: block;
+  }
+}

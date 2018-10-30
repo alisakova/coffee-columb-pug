@@ -1,0 +1,22 @@
+.coffee-machine-slider {
+  margin-bottom: rem(32);
+  .slick-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: transparent;
+    border: none;
+  }
+  .slick-prev {
+    left: rem(-50);
+    @media (max-width: 992px) {
+      left: rem(10);
+    }
+  }
+  .slick-next {
+    right: rem(-50);
+    @media (max-width: 992px) {
+      right: rem(10);
+    }
+  }
+}

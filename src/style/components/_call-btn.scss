@@ -1,0 +1,30 @@
+.call-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: $rose;
+  padding: rem(4 22 4 4);
+  border-radius: rem(24);
+  font-size: rem(14);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: rem(222);
+}
+
+.call-btn__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  width: rem(40);
+  height: rem(40);
+  margin-right: rem(16);
+}
+
+@media (max-width: 540px) {
+  .call-btn {
+    max-width: rem(230);
+  }
+}

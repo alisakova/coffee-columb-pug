@@ -1,0 +1,53 @@
+.form[disabled="disabled"] {
+  .form__input {
+    background: rgba(246, 247, 250, 0.9);
+    color: $gray-text-color;
+  }
+  .btn {
+    background: rgba(243, 8, 78, 0.3);
+  }
+}
+
+.form__input,
+.form__textarea {
+  background: $gray-bg-color;
+  border: none;
+  border-radius: rem(8);
+  -webkit-appearance: none;
+  padding: rem(14) rem(24);
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $blue;
+  width: 100%;
+  @include input-placeholder {
+    color: $gray-text-color;
+    transition: color 250ms;
+  }
+  &:focus {
+    @include input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.form__textarea {
+  resize: none;
+  min-height: rem(200);
+}
+
+.form__label {
+  display: block;
+  text-transform: uppercase;
+  font-size: rem(14);
+  line-height: 2.28;
+  font-weight: 500;
+  color: $gray-text-color;
+  margin-bottom: rem(8);
+}
+
+.form__item {
+  margin-bottom: rem(26);
+  &:nth-last-child(2) {
+    margin-bottom: rem(48);
+  }
+}

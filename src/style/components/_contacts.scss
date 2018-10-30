@@ -1,0 +1,32 @@
+.contacts {
+  color: $blue;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: 300;
+  padding: rem(32) rem(32) rem(55);
+  a {
+    &:hover, &:active, &:focus {
+      color: $gray-text-color;
+    }
+  }
+}
+
+.contacts__icon {
+  max-width: rem(20);
+  min-width: rem(20);
+  height: rem(20);
+  margin-right: rem(12);
+  svg {
+    display: block;
+    width: 100%;
+  }
+}
+
+.contacts__contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &:not(:last-child) {
+    margin-bottom: rem(18);
+  }
+}

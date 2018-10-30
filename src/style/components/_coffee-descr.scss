@@ -1,0 +1,22 @@
+.coffee-descr {
+  box-shadow: 0 rem(6 16) rgba(0, 43, 93, 0.20338);
+  background: #fff;
+  border-radius: rem(8);
+  padding: rem(20);
+  min-width: rem(416);
+  position: absolute;
+  display: none;
+  z-index: 500;
+  top: 0;
+  left: 50%;
+  transition: opacity 250ms;
+  p {
+    color: $main-font-color;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  .bold {
+    font-weight: 500;
+  }
+}

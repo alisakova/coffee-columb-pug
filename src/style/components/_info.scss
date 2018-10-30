@@ -1,0 +1,137 @@
+.info {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  background: $darken-gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__block {
+  width: 100%;
+  border-radius: rem(8);
+  padding: rem(32) rem(32) rem(24);
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  background: #fff;
+  &_size_m {
+    max-width: rem(416);
+    margin-bottom: rem(32);
+    padding: 0;
+    &:first-child {
+      margin-right: rem(32);
+    }
+  }
+  &_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+  }
+}
+
+.info__content {
+  padding: rem(32) rem(32) rem(24);
+  min-height: rem(312);
+  p {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.info__caption {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: rem(34);
+}
+
+.info__news-caption {
+  display: block;
+  font-size: rem(18);
+  line-height: 1.33;
+  margin-bottom: rem(20);
+}
+
+.info__footer {
+  text-align: center;
+  border-top: 1px solid $border-color;
+  padding: {
+    top: rem(23);
+    bottom: rem(23);
+  }
+  a {
+    color: $rose;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover, &:active, &:focus {
+      color: darken($rose, 10%);
+    }
+  }
+}
+
+.info__articles-list {
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $gray-text-color;
+  li {
+    transition: color 250ms;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+    &:last-child {
+      margin-bottom: rem(30);
+    }
+    &:hover, &:active, &:focus {
+      color: $blue;
+    }
+  }
+}
+
+.info__map {
+  max-width: rem(528);
+  min-width: rem(528);
+  height: rem(368);
+}
+
+.info__vk {
+  width: 100%;
+  margin-bottom: rem(32);
+}
+
+@media (max-width: 650px) {
+  .info__block_flex {
+    flex-direction: column;
+  }
+  .info__map {
+    max-width: none;
+    min-width: 0;
+  }
+  .info__block_size_m {
+    max-width: none;
+    width: 100%;
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+  .info__content {
+    min-height: 0;
+  }
+  .info__caption {
+    font-size: rem(18);
+  }
+}
+
+@media (max-width: 540px) {
+  .info {
+    padding: rem(32) 0;
+  }
+}

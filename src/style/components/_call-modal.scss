@@ -1,0 +1,91 @@
+.jquery-modal {
+  &.blocker {
+    z-index: 100;
+    background: rgba(246, 247, 250, 0.9);
+  }
+}
+
+.call-modal {
+  &.modal {
+    background: $blue;
+    box-shadow: 0 rem(6 16) rgba(0, 43, 93, 0.20338);
+    border-radius: rem(8);
+    padding: rem(36) rem(48) rem(42);
+    max-width: rem(416);
+    a.close-modal {
+      display: none;
+    }
+  }
+  line-height: 1.33;
+}
+
+.modal-close {
+  position: absolute;
+  top: rem(16);
+  right: rem(16);
+  svg {
+    path {
+      transition: opacity 250ms;
+    }
+  }
+  &:hover, &:active, &:focus {
+    svg {
+      path {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.call-modal__title {
+  font-size: rem(24);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: rem(24);
+}
+
+.call-modal__text {
+  color: #fff;
+  font-size: rem(18);
+  margin-bottom: rem(30);
+}
+
+.call-modal__form {
+  .form__input {
+    border-radius: rem(24);
+    padding: {
+      top: rem(12);
+      bottom: rem(12);
+    }
+  }
+  .form__item {
+    margin-bottom: rem(22);
+    position: relative;
+  }
+}
+
+.call-modal__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(5);
+  border-radius: rem(24);
+  padding: {
+    left: rem(20);
+    right: rem(20);
+  }
+  margin: 0;
+}
+
+.call-modal__additional-text {
+  color: $gray-text-color;
+  font-size: rem(12);
+}
+
+.call-modal__after-submit-text {
+  display: none;
+  color: #fff;
+  font-size: rem(18);
+  margin-bottom: rem(23);
+  padding: rem(12) 0;
+}

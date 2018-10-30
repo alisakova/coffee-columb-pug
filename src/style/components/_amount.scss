@@ -1,0 +1,121 @@
+.amount {
+  padding: {
+    top: rem(100);
+    bottom: rem(96);
+  }
+  background: $darken-gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+  &_alt-bg {
+    background: $border-color;
+  }
+}
+
+.amount__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.amount__info {
+  width: 48%;
+}
+
+.amount__range-block {
+  width: 50%;
+  background: #fff;
+  border-radius: rem(8);
+  box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+  padding: rem(32) rem(30) rem(32) rem(34);
+}
+
+.amount__question {
+  font-size: rem(32);
+  line-height: 1.25;
+  font-weight: 500;
+  margin-bottom: rem(16);
+}
+
+.amount__text {
+  font-size: rem(20);
+  line-height: 1.6;
+  margin-bottom: rem(32);
+  color: $gray-text-color;
+}
+
+.amount__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(22);
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.amount__range-output {
+  color: $rose;
+  font-size: rem(16);
+}
+
+.amount__range {
+  margin-bottom: rem(35);
+}
+
+.amount__range-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.amount__caption {
+  text-transform: uppercase;
+  font-size: rem(12);
+  line-height: 1.33;
+  color: $gray-text-color;
+  margin-bottom: rem(12);
+}
+
+.amount__value {
+  font-size: rem(24);
+  line-height: 1;
+}
+
+.amount__amount-coffee {
+  border-right: 1px solid $border-color;
+  padding-right: rem(20);
+  margin-right: rem(15);
+}
+
+@media (max-width: 650px) {
+  .amount__container {
+    flex-direction: column;
+  }
+  .amount__info {
+    width: 100%;
+    margin-bottom: rem(32);
+  }
+  .amount__range-block {
+    width: 100%;
+  }
+  .amount__row,
+  .amount__range-output {
+    font-size: rem(22);
+  }
+  .amount__question {
+    font-size: rem(26);
+  }
+  .amount__caption {
+    font-size: rem(16);
+  }
+}
+
+@media (max-width: 540px) {
+  .amount {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+  }
+}

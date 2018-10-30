@@ -1,0 +1,72 @@
+.coffee-machine {
+  background: $gray-bg-color;
+  .container {
+    max-width: rem(904);
+  }
+  padding: rem(96) 0;
+}
+
+.coffee-machine__block {
+  border-radius: rem(8);
+  background: #fff;
+  padding: rem(30) rem(22) rem(22) rem(48);
+  box-shadow: 0 rem(16 24) rgba(145, 161, 187, 0.100006);
+  &.slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: rem(410);
+  }
+  &_background-blue {
+    padding: rem(42) rem(80);
+    display: block;
+    background: $blue;
+    color: #fff;
+    font-size: rem(24);
+    line-height: 1.33;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.coffee-machine__block-caption {
+  color: $blue;
+  font-size: rem(40);
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: rem(24);
+}
+
+.coffee-machine__img {
+  max-width: rem(320);
+  height: rem(350);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.coffee-machine__list {
+  color: $blue;
+  font-size: rem(18);
+  line-height: 1.7;
+}
+
+@media (max-width: 540px) {
+  .coffee-machine {
+    padding: rem(32) 0;
+  }
+  .coffee-machine__block {
+    padding: rem(25) rem(48);
+    &_background-blue {
+      padding: rem(25);
+    }
+  }
+  .coffee-machine__block-caption {
+    font-size: rem(36);
+  }
+}

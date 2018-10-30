@@ -1,0 +1,110 @@
+.office-catalog {
+  padding: {
+    top: rem(96);
+    bottom: rem(96);
+  }
+  .container {
+    max-width: rem(904);
+  }
+  background: $border-color;
+}
+
+.office-catalog__item {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: rem(28);
+  }
+}
+
+.office-catalog__item-caption {
+  box-shadow: 0 rem(16 24) rgba(145, 161, 187, 0.100006);
+  border-radius: rem(8);
+  background: #fff;
+  font-size: rem(18);
+  line-height: 1.7;
+  font-weight: 500;
+  padding: rem(22) rem(32);
+  position: relative;
+  transition: all 250ms;
+  cursor: pointer;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/office/chevron-closed.svg') no-repeat;
+    background-size: cover;
+    width: rem(12);
+    height: rem(8);
+    right: rem(38);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 rem(2 4) rgba(145, 161, 187, 0.100006);
+    &:after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+
+.office-catalog__body {
+  border-bottom-left-radius: rem(8);
+  border-bottom-right-radius: rem(8);
+}
+
+.office-catalog__body-item {
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom-left-radius: rem(8);
+    border-bottom-right-radius: rem(8);
+  }
+}
+
+.office-catalog__body-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(24) rem(32);
+  background-color: $gray-bg-color;
+  font-size: rem(16);
+  line-height: 1.5;
+  transition: background-color 250ms;
+  &:hover, &:focus, &:active {
+    background-color: darken($gray-bg-color, 2%);
+  }
+}
+
+.office-catalog__item-price {
+  min-width: rem(90);
+  text-align: right;
+}
+
+@media (max-width: 540px) {
+  .office-catalog {
+    padding: {
+      top: rem(32);
+      bottom: rem(32);
+    }
+  }
+  .office-catalog__item-caption,
+  .office-catalog__body-item-content {
+    padding: {
+      left: rem(10);
+      right: rem(10);
+    }
+  }
+  .office-catalog__item-caption {
+    &:after {
+      right: rem(18);
+    }
+  }
+  .office-catalog__item-name,
+  .office-catalog__item-price {
+    font-size: rem(11);
+  }
+  .office-catalog__item-name {
+    margin-right: rem(24);
+  }
+}

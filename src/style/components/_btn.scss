@@ -1,0 +1,26 @@
+.btn {
+  border-radius: rem(20);
+  background: $rose;
+  color: #fff;
+  text-transform: uppercase;
+  padding: rem(13) rem(28) rem(12);
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: 1.14;
+}
+
+.btn_white {
+  background: #fff;
+}
+
+.btn_blue {
+  background: $blue;
+}
+
+.btn_blue-color {
+  color: $blue;
+}
+
+.btn_rose-color {
+  color: $rose;
+}

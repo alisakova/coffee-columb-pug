@@ -1,0 +1,46 @@
+.privacy-policy {
+  background: $darken-gray-bg-color;
+  padding: rem(96) 0;
+  .container {
+    max-width: rem(1000);
+  }
+  h1 {
+    margin-bottom: rem(45);
+    text-align: center;
+  }
+  h2 {
+    font-size: rem(18);
+    text-align: left;
+    margin-bottom: rem(24);
+    &:not(:first-of-type) {
+      margin-top: rem(24);
+    }
+  }
+  p {
+    color: $main-font-color;
+  }
+  ul {
+    font-size: rem(14);
+  }
+}
+
+.privacy-policy__content {
+  box-shadow: 0 rem(16 24) rgba(145, 161, 187, 0.100006);
+  border-radius: rem(8);
+  background: #fff;
+  font-size: rem(18);
+  padding: rem(45);
+}
+
+@media (max-width: 540px) {
+  .privacy-policy {
+    padding: rem(32) 0;
+    h1 {
+      font-size: rem(32);
+      margin-bottom: rem(32);
+    }
+  }
+  .privacy-policy__content {
+    padding: rem(16);
+  }
+}
