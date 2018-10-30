@@ -5,7 +5,6 @@ var gulp = require("gulp"),
   sass = require("gulp-sass"),
   browserSync = require("browser-sync"),
   concat = require("gulp-concat"),
-  rigger = require("gulp-rigger"),
   uglify = require("gulp-uglify"),
   prefixer = require("gulp-autoprefixer"),
   prettify = require("gulp-html-prettify"),
@@ -14,9 +13,8 @@ var gulp = require("gulp"),
   pngquant = require("imagemin-pngquant"),
   rimraf = require("rimraf"),
   sourcemaps = require("gulp-sourcemaps"),
-  htmlImport = require("gulp-html-import"),
   reload = browserSync.reload,
-  pug = require('gulp-pug');
+  gulpPug = require('gulp-pug');
 
 var path = {
   build: {
@@ -30,7 +28,7 @@ var path = {
   },
   src: {
     //Пути откуда брать исходники
-    html: "src/*.html",
+    html: 'src/pages/*.pug',
     js: "src/js/*.js",
     style: "src/style/main.scss",
     img: ["src/img/*.*", "src/img/**/*.*"],
@@ -38,12 +36,12 @@ var path = {
   },
   watch: {
     //За чем наблюдать
-    html: "src/**/*.html",
+    html: 'src/pages/*.pug',
     js: "src/js/*.js",
     style: "src/style/**/*.scss",
     img: ["src/img/*.*", "src/img/**/*.*"]
   },
-  clean: "./build"
+  clean: "build"
 };
 
 var config = {
@@ -71,13 +69,15 @@ function log(error) {
   this.end();
 }
 
-//собрать html
+//собрать pug в html
 gulp.task("html:build", function() {
   gulp
     .src(path.src.html)
-    .pipe(htmlImport("src/html/"))
-    .pipe(prettify({indent_char: ' ', indent_size: 2}))
-    .pipe(rigger())
+    .pipe(gulpPug())
+    // .pipe(gulpPug({
+    //   pretty: true
+    // }))
+    // .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .on("error", log)
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({ stream: true }));
@@ -111,15 +111,15 @@ gulp.task("style:build", function() {
 gulp.task("image:build", function() {
   gulp
     .src(path.src.img)
-    .pipe(
-      imagemin()
-    )
+    .pipe(imagemin())
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
 });
 
 gulp.task("files:build", function() {
-  gulp.src(path.src.files).pipe(gulp.dest(path.build.files));
+  gulp
+    .src(path.src.files)
+    .pipe(gulp.dest(path.build.files));
 });
 
 //следить за изменениями
