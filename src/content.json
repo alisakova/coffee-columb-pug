@@ -1,12 +1,19 @@
 {
-  "title": [
+  "features": [
     {
-      "article": "priver",
-      "page": "hi"
+      "icon": "feature-1.svg",
+      "name": "Вкусно",
+      "descr": "Поставляем кофе только свежей обжарки"
     },
     {
-      "article": "hello",
-      "page": "pifpaf"
+      "icon": "feature-2.svg",
+      "name": "Быстро",
+      "descr": "Доставим на следующий день после составления договора"
+    },
+    {
+      "icon": "feature-3.svg",
+      "name": "Надёжно",
+      "descr": "При поломках заменим или отремонтируем за 24 часа"
     }
   ]
 }
