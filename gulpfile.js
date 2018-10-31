@@ -14,7 +14,8 @@ var gulp = require("gulp"),
   rimraf = require("rimraf"),
   sourcemaps = require("gulp-sourcemaps"),
   reload = browserSync.reload,
-  gulpPug = require('gulp-pug');
+  gulpPug = require("gulp-pug"),
+  gulpData = require("gulp-data");
 
 var path = {
   build: {
@@ -28,7 +29,7 @@ var path = {
   },
   src: {
     //Пути откуда брать исходники
-    html: 'src/pages/*.pug',
+    html: "src/pages/*.pug",
     js: "src/js/*.js",
     style: "src/style/main.scss",
     img: ["src/img/*.*", "src/img/**/*.*"],
@@ -36,12 +37,12 @@ var path = {
   },
   watch: {
     //За чем наблюдать
-    html: 'src/pages/*.pug',
+    html: "src/**/**/*.pug",
     js: "src/js/*.js",
     style: "src/style/**/*.scss",
-    img: ["src/img/*.*", "src/img/**/*.*"]
-  },
-  clean: "build"
+    img: "src/img/**/*.*"
+  }
+  // clean: "build"
 };
 
 var config = {
@@ -71,16 +72,17 @@ function log(error) {
 
 //собрать pug в html
 gulp.task("html:build", function() {
+  var config = require(__dirname + "/src/content.json");
   gulp
     .src(path.src.html)
-    .pipe(gulpPug())
-    // .pipe(gulpPug({
-    //   pretty: true
-    // }))
-    // .pipe(prettify({indent_char: ' ', indent_size: 2}))
+    .pipe(
+      gulpPug({
+        pretty: true,
+        locals: config
+      })
+    )
     .on("error", log)
-    .pipe(gulp.dest(path.build.html))
-    .pipe(reload({ stream: true }));
+    .pipe(gulp.dest(path.build.html));
 });
 
 //собрать js
@@ -117,9 +119,7 @@ gulp.task("image:build", function() {
 });
 
 gulp.task("files:build", function() {
-  gulp
-    .src(path.src.files)
-    .pipe(gulp.dest(path.build.files));
+  gulp.src(path.src.files).pipe(gulp.dest(path.build.files));
 });
 
 //следить за изменениями
@@ -139,7 +139,13 @@ gulp.task("watch", function() {
 });
 
 //cобрать все
-gulp.task("build", ["html:build", "js:build", "style:build", "image:build", "files:build"]);
+gulp.task("build", [
+  "html:build",
+  "js:build",
+  "style:build",
+  "image:build",
+  "files:build"
+]);
 
 gulp.task("webserver", function() {
   browserSync(config);
