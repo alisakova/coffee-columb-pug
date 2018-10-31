@@ -21,11 +21,13 @@ html(lang="ru")
     script(type="text/javascript", src="https://code.jquery.com/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
-    script(type="text/javascript", src="https://vk.com/js/api/openapi.js?159")
+    //- /* script(type="text/javascript", src="https://vk.com/js/api/openapi.js?159") */
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
     link(rel="stylesheet", type="text/css", href="/css/main.css")
   body
     include ../components/header
+    main
+      block content
     // Yandex.Metrica Counter
     //- /* script(type="text/javascript").
     //-   (function(d, w, c) {

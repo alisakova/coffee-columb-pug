@@ -1,2 +1,47 @@
-.container
-  h1 title.page
+-
+  var dropdowns = [
+    {
+      "name": "Услуги",
+      "dropdownLinks": [
+        {
+          "linkName": "Еда и напитки",
+          "link": "/food"
+        },
+        {
+          "linkName": "Канцелярские товары",
+          "link": "/office"
+        }
+      ]
+    },
+    {
+      "name": "Компания",
+      "dropdownLinks": [
+        {
+          "linkName": "О компании",
+          "link": "/about"
+        },
+        {
+          "linkName": "Контакты",
+          "link": "/contact"
+        }
+      ]
+    }
+  ]
+header.header.container
+  .header__left-col
+    a(href="/index").header__logo
+      img(src="/img/logo.svg", alt="Логотип 911office")
+    .header__contacts
+      a(href="tel:+78126034911") 7 (812) 603-4-911
+      a(href="mailto:info@911office.ru") info@911office.ru
+  .header__right-col
+    a(href="/coffee").header__el.header__el_rose Кофемашина за 0 рублей
+    each item in dropdowns 
+      .header__el.dropdown
+        button.dropdown__toggle= item.name
+        ul.dropdown__menu
+          for linksItem in item.dropdownLinks
+            li.dropdown__item
+              a(href=linksItem.link)= linksItem.linkName
+    .header__btn
+      include ../components/call-modal

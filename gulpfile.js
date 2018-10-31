@@ -14,8 +14,7 @@ var gulp = require("gulp"),
   rimraf = require("rimraf"),
   sourcemaps = require("gulp-sourcemaps"),
   reload = browserSync.reload,
-  gulpPug = require("gulp-pug"),
-  gulpData = require("gulp-data");
+  gulpPug = require("gulp-pug");
 
 var path = {
   build: {
@@ -82,6 +81,7 @@ gulp.task("html:build", function() {
       })
     )
     .on("error", log)
+    .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(path.build.html));
 });
 
@@ -113,7 +113,7 @@ gulp.task("style:build", function() {
 gulp.task("image:build", function() {
   gulp
     .src(path.src.img)
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
 });

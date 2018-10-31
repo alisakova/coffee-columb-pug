@@ -85,4 +85,4 @@ if (toTopBtn) {
   }
 }
 
-VK.Widgets.CommunityMessages("vk_community_messages", 86720983, {tooltipButtonText: "Есть вопрос?", buttonType: 'blue_circle', disableButtonTooltip: '1'});
+// VK.Widgets.CommunityMessages("vk_community_messages", 86720983, {tooltipButtonText: "Есть вопрос?", buttonType: 'blue_circle', disableButtonTooltip: '1'});

@@ -1,35 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="format-direction" content="telephone=no">
-    <link rel="icon" href="img/favicon-16.png" type="image/png">
-    <link rel="icon" href="img/favicon-32.png" type="image/png">
-    <link rel="icon" href="img/favicon-96.png" type="image/png">
-    <title>911 office - Снабжение офисов. Аренда кофемашины бесплатно. Доставка кофе, воды, еды и канцелярских товаров в офис</title>
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="911office.ru - Снабжение офисов">
-    <meta property="og:title" content="Аренда кофемашины бесплатно при покупке кофе. Доставка воды, еды и канцелярских товаров в офис.">
-    <meta property="og:description" content="Снабжение офисов под ключ. Бесплатная аренда кофемашины. Доставка кофе, воды, еды и канцелярских товаров">
-    <meta property="og:url" content="https://911office.ru/">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:image" content="https://911office.ru/img/logo.svg">
-    <meta name="keywords" content="кофемашина в офис, кофемашина аренда, кофе машина в офис, кофе машина аренда, доставка кофе, кофе в офис, кофемашина бесплатно, аренда кофемашин в питере, еда в офис, снеки в офис, вода в офис, доставка воды в офис, канцелярские товары в офис">
-    <meta name="viewport" content="width=device-width, height=device-height">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>title.page</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-direction" content="telephone=no">
+  <link rel="icon" href="img/favicon-16.png" type="image/png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png">
+  <link rel="icon" href="img/favicon-96.png" type="image/png">
+  <title>911 office - Снабжение офисов. Аренда кофемашины бесплатно. Доставка кофе, воды, еды и канцелярских товаров в офис</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="911office.ru - Снабжение офисов">
+  <meta property="og:title" content="Аренда кофемашины бесплатно при покупке кофе. Доставка воды, еды и канцелярских товаров в офис.">
+  <meta property="og:description" content="Снабжение офисов под ключ. Бесплатная аренда кофемашины. Доставка кофе, воды, еды и канцелярских товаров">
+  <meta property="og:url" content="https://911office.ru/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://911office.ru/img/logo.svg">
+  <meta name="keywords" content="кофемашина в офис, кофемашина аренда, кофе машина в офис, кофе машина аренда, доставка кофе, кофе в офис, кофемашина бесплатно, аренда кофемашин в питере, еда в офис, снеки в офис, вода в офис, доставка воды в офис, канцелярские товары в офис">
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+  <header class="header container">
+    <div class="header__left-col">
+      <a class="header__logo" href="/index">
+        <img src="/img/logo.svg" alt="Логотип 911office">
+      </a>
+      <div class="header__contacts"><a href="tel:+78126034911">7 (812) 603-4-911</a><a href="mailto:info@911office.ru">info@911office.ru</a>
+      </div>
     </div>
-    <!-- Yandex.Metrica Counter-->
-    <script src="js/main.min.js"></script>
-  </body>
+    <div class="header__right-col"><a class="header__el header__el_rose" href="/coffee">Кофемашина за 0 рублей</a>
+      <div class="header__el dropdown">
+        <button class="dropdown__toggle">Услуги</button>
+        <ul class="dropdown__menu">
+          <li class="dropdown__item"><a href="/food">Еда и напитки</a>
+          </li>
+          <li class="dropdown__item"><a href="/office">Канцелярские товары</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__el dropdown">
+        <button class="dropdown__toggle">Компания</button>
+        <ul class="dropdown__menu">
+          <li class="dropdown__item"><a href="/about">О компании</a>
+          </li>
+          <li class="dropdown__item"><a href="/contact">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__btn"><a class="call-btn _call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447716 0.447754 0 1 0H4.5C5.05225 0 5.5 0.447716 5.5 1C5.5 2.25 5.69995 3.45 6.07007 4.57C6.17993 4.92 6.1001 5.31 5.82007 5.57L3.62012 7.78C5.06006 10.62 7.37988 12.93 10.21 14.37L12.4099 12.17C12.6899 11.9 13.0801 11.82 13.4299 11.93C14.55 12.3 15.75 12.5 17 12.5C17.5522 12.5 18 12.9477 18 13.5V17C18 17.2652 17.8945 17.5196 17.707 17.7071C17.5195 17.8946 17.2651 18 17 18C7.61108 18 0 10.3888 0 1ZM16 6.5V8H10V2H11.5V5.5L17 0L18 1L12.5 6.5H16Z" fill="#F3084E"/>
+</svg>
+</span><span>Заказать звонок</span></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="first-slide">
+      <div class="container">
+        <div class="first-slide__content">
+          <h1>Всё для эффективной работы офиса</h1>
+          <p class="first-slide__descr">Самый ароматный кофе свежей обжарки, аппетитные снеки, вода и соки, бумага и другая канцелярская продукция с доставкой в офис.</p><a class="call-btn _call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447716 0.447754 0 1 0H4.5C5.05225 0 5.5 0.447716 5.5 1C5.5 2.25 5.69995 3.45 6.07007 4.57C6.17993 4.92 6.1001 5.31 5.82007 5.57L3.62012 7.78C5.06006 10.62 7.37988 12.93 10.21 14.37L12.4099 12.17C12.6899 11.9 13.0801 11.82 13.4299 11.93C14.55 12.3 15.75 12.5 17 12.5C17.5522 12.5 18 12.9477 18 13.5V17C18 17.2652 17.8945 17.5196 17.707 17.7071C17.5195 17.8946 17.2651 18 17 18C7.61108 18 0 10.3888 0 1ZM16 6.5V8H10V2H11.5V5.5L17 0L18 1L12.5 6.5H16Z" fill="#F3084E"/>
+</svg>
+</span><span>Заказать звонок</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <div class="service__caption"><span class="service__section-name section-name">Услуги</span>
+          <h2>Доставим это в ваш офиис</h2>
+        </div>
+        <div class="service__container">
+          <div class="service__block service__block_rose service__block_width-100 service__block_flex">
+            <div class="service__col">
+              <div class="service__block-caption">Кофемашина в&nbsp;офис за 0₽</div>
+              <div class="service__descr">
+                Платите только за кофе.
+                <br />От 10 рублей за кружку.
+              </div><a class="btn btn_white btn_blue-color" href="/coffee">Подробнее</a>
+            </div>
+            <div class="service__col">
+              <div class="service__img">
+                <img src="/img/index/coffee.png" alt="Кофемашина в офис">
+              </div>
+            </div>
+          </div>
+          <div class="service__block service__block_white service__block_size_m">
+            <div class="service__block-caption service__block-caption_blue">Лёгкая еда</div>
+            <div class="service__descr service__descr_blue">И напитки для офисных обедов</div>
+            <ul class="service__list">
+              <li>Вода и соки</li>
+              <li>Фрукты</li>
+              <li>Сэндвичи</li>
+            </ul><a class="btn" href="/food">Подробнее</a>
+            <div class="service__img-food">
+              <img src="/img/index/food.png" alt="Лёгкая еда">
+            </div>
+          </div>
+          <div class="service__block service__block_blue service__block_size_s">
+            <div class="service__block-caption service__block-caption_small-font-size">Канцеляркские товары</div>
+            <ul class="service__list">
+              <li>Заправка картриджей</li>
+              <li>Бумага и стикеры</li>
+              <li>Степлеры и скрепки</li>
+              <li>Ручки и карандаши</li>
+              <li>И другое</li>
+            </ul><a class="btn btn_white btn_rose-color" href="/office">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Yandex.Metrica Counter-->
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
