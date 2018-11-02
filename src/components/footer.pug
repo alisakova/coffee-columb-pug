@@ -1,0 +1,44 @@
+mixin footerCol(caption)
+  .footer__col
+    .footer__caption= caption
+    ul.footer__links-list
+      block
+
+footer.footer
+  .container
+    .footer__container
+      +footerCol("Услуги")
+        each link in footerCommonLinks
+          li
+            a(href= link.link)= link.name
+      +footerCol("Информация")
+        each link in footerInfoLinks
+          li
+            a(href= link.link)= link.name
+      +footerCol("Полезное")
+        each link in footerOtherLinks
+          li
+            a(href= link.link)= link.name
+      +footerCol("Контакты")
+        li 
+          a(href="mailto" + mail)= mail
+        li 
+          a(href="tel:+7812603491")= telephone
+        li 
+          ul.footer__social-icons
+            each link in footerSocialLinks
+              li 
+                a(href= link.link)
+                  img(src="/img/" + link.icon, alt= link.altText)
+  .footer__additional
+    .container
+      .footer__container
+        .footer__col
+          |ИНН&nbsp;471910345420<br />
+          |ОГРНИП&nbsp;318470400019147
+        .footer__col
+          .footer__logo
+            img(src="/img/logo-blue.svg", alt="Логотип")
+        .footer__col
+          a(href="/privacy-policy") Политика конфиденциальности
+          a(href="/files/Contract.zip", download="Договор") Скачать

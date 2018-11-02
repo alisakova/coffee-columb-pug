@@ -1,6 +1,13 @@
 extends ../templates/base
 
+block variables
+  - var vk_groups = true
+  
 block content
   include ../components/index/first-slide
   include ../components/index/service
   include ../components/index/features
+  include ../components/reviews
+  include ../components/index/offer
+  include ../components/index/order-call
+  include ../components/index/info

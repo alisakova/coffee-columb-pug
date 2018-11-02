@@ -21,13 +21,16 @@ html(lang="ru")
     script(type="text/javascript", src="https://code.jquery.com/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
-    //- /* script(type="text/javascript", src="https://vk.com/js/api/openapi.js?159") */
+    script(type="text/javascript", src="https://vk.com/js/api/openapi.js?159")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
     link(rel="stylesheet", type="text/css", href="/css/main.css")
   body
+    block variables 
     include ../components/header
     main
       block content
+      #vk_community_messages
+    include ../components/footer
     // Yandex.Metrica Counter
     //- /* script(type="text/javascript").
     //-   (function(d, w, c) {
@@ -71,6 +74,6 @@ html(lang="ru")
     //-   ga('create', 'UA-103311594-2', 'auto');
     //-   ga('send', 'pageview');
     //- // End Google Analytics
-    //- script(type="text/javascript").
-    //-   VK.Widgets.Group("vk_groups", {mode: 4, width: 'auto', height: '400'}, 86720983); */
+    script(type="text/javascript").
+      VK.Widgets.Group("vk_groups", {mode: 4, width: 'auto', height: '400'}, 86720983);
     script(src="js/main.min.js")
