@@ -1,0 +1,18 @@
+section.features(class= additionalClass ? additionalClass : "")
+  .container
+    .features__caption
+      include ./section-name
+    .features__container
+      each item in features
+        if (additionalClass === "food")
+          a(href= item.href).features__item
+            .features__icon
+              img(src= item.icon, alt="Преимущество")
+            .features__item-caption= item.name
+        else 
+          .features__item
+            .features__icon
+              img(src= item.icon, alt="Преимущество")
+            .features__item-caption= item.name
+            .features__descr= item.descr
+            

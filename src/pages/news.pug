@@ -1,0 +1,12 @@
+extends ../templates/base
+
+block variables 
+  -
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Новости";
+    var firstSlideDescr = "Обновления и улучшения";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/news-promo
+  +articles-list(newsPromo)

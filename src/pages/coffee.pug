@@ -1,0 +1,49 @@
+extends ../templates/base
+
+block variables
+  -
+    var btnUp = true;
+    var additionalClass = "coffee";
+    var contacts = true;
+    var btnContainer = true;
+    var firstSlideTitle = "Аренда кофемашины в&nbsp;офис за";
+    var add = "<span class='color-rose'>0 рублей.</span>";
+    var firstSlideDescr = "Платите только за кофе. От 10 рублей за кружку.";
+    var firstSlideImg = "/img/index/coffee.png";
+    var firstSlideImgAlt = "Аренда кофемашины";
+    var sectionName = "это выгодно";
+    var sectionTitle ="Платите только за кофе";
+    var orderCallTitle = "Подберём кофейную смесь индивидуально под ваши вкусы"
+    var features = [
+      {
+        "icon": "/img/coffee/feature-1.svg",
+        "name": "Пользуйтесь бесплатно",
+        "descr": "Аренда кофемашины — 0₽ при покупке от 5 кг кофе в месяц"
+      },
+      {
+        "icon": "/img/coffee/feature-2.svg",
+        "name": "38 сортов кофе",
+        "descr": "Поставляем только лучшие сорта кофе свежей обжарки"
+      },
+      {
+        "icon": "/img/coffee/feature-3.svg",
+        "name": "Быстро",
+        "descr": "Техническое обслуживание, замена и ремонт по звонку"
+      }
+    ]
+    
+block content 
+  include ../components/first-slide
+  - var amountAdditionalClass = "amount_alt-bg"
+  include ../components/coffee/amount
+  include ../components/features
+  include ../components/order-call
+  include ../components/coffee/coffee-machine
+  include ../components/coffee/catalog
+  - 
+    var amountAdditionalClass = "";
+    var outputId = "output-2";
+    var inputId = "input-2";
+  include ../components/coffee/amount
+  include ../components/reviews
+  include ../components/info

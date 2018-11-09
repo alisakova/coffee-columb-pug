@@ -1,0 +1,18 @@
+extends ../templates/base
+
+block variables 
+  -
+    var newsAndArticles = true;
+    var backBtn = true;
+    var backLink = "/news";
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Кофе в офис";
+    var firstSlideDescr = "20 марта, 2018";
+    var additionalFirstSlideClass = "first-slide_article";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/news-components/news-intro
+  include ../components/news-components/news-paragraph
+  include ../components/article2/news-body
+  include ../components/info

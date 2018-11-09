@@ -1,0 +1,15 @@
+.contacts(class= contactClass ? contactClass : "")
+  if infoTitle === true
+    .info__caption = Контакты
+  .contacts__contact
+    .contacts__icon
+      include ../img/tel.svg
+    a(href="tel:+78126034911")= telephone
+  .contacts__contact
+    .contacts__icon
+      include ../img/mail.svg
+    a(href="mailto" + mail)= mail
+  .contacts__contact
+    .contacts__icon
+      include ../img/place.svg
+    .info__address= address

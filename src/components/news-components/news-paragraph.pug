@@ -1,0 +1,11 @@
+mixin news-paragraph(item)
+  .article__paragraph(class= item.img ? "article__paragraph_with-img" : "", class= item.additionalNewsClass ? item.additionalNewsClass : "")
+    if item.img
+      .article__text-img
+        img(src= item.img, alt= item.imgAltText)
+    if item.title
+      h2!= item.title
+    if item.paragraphs
+      .article__text
+        each paragraph in item.paragraphs
+          p!= paragraph

@@ -1,0 +1,17 @@
+extends ../templates/base
+
+block variables 
+  -
+    var newsAndArticles = true;
+    var backBtn = true;
+    var backLink = "/news";
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Кофе без кофеина итальянского бренда Hausbrandt";
+    var firstSlideDescr = "30 октября, 2018";
+    var additionalFirstSlideClass = "first-slide_article";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/news-components/news-paragraph
+  include ../components/new-coffee/news-body
+  include ../components/info

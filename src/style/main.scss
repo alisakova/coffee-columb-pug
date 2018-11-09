@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'util';
 @import 'mixins';
+@import 'slick';
+@import 'jquery.modal.css';
+@import 'rangeslider.css';
 
 html {
 	height: 100%;
@@ -108,6 +111,10 @@ img {
 
 .color-rose {
 	color: $rose;
+}
+
+.bold {
+	font-weight: 500;
 }
 
 @media (max-width: 1080px) {

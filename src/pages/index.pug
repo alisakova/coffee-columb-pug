@@ -1,13 +1,39 @@
 extends ../templates/base
 
 block variables
-  - var vk_groups = true
+  - 
+    var btnUp = true;
+    var vk_groups = true;
+    var newsAndArticles = true;
+    var firstSlideTitle = "Всё для эффективной работы офиса";
+    var firstSlideDescr = "Самый ароматный кофе свежей обжарки, аппетитные снеки, вода и соки, бумага и другая канцелярская продукция с доставкой в офис.";
+    var sectionName = "Преимущества";
+    var sectionTitle = "Мы предлагаем лучшие условия";
+    var orderCallTitle = "Остались вопросы?"
+    var features = [
+      {
+        "icon": "/img/index/feature-1.svg",
+        "name": "Вкусно",
+        "descr": "Поставляем кофе только свежей обжарки"
+      },
+      {
+        "icon": "/img/index/feature-2.svg",
+        "name": "Быстро",
+        "descr": "Доставим на следующий день после составления договора"
+      },
+      {
+        "icon": "/img/index/feature-3.svg",
+        "name": "Надёжно",
+        "descr": "При поломках заменим или отремонтируем за 24 часа"
+      }
+    ];
+    
   
 block content
-  include ../components/index/first-slide
+  include ../components/first-slide
   include ../components/index/service
-  include ../components/index/features
+  include ../components/features
   include ../components/reviews
   include ../components/index/offer
-  include ../components/index/order-call
-  include ../components/index/info
+  include ../components/order-call
+  include ../components/info

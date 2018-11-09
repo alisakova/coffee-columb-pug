@@ -1,0 +1,14 @@
+extends ../templates/base
+
+block variables 
+  -
+    var newsAndArticles = true;
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "О компании";
+    var firstSlideDescr = "Мы обеспечиваем офисы и предприятия всем необходимым";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/about/about-info
+  include ../components/reviews
+  include ../components/info

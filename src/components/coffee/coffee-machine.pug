@@ -1,0 +1,21 @@
+section.coffee-machine
+  .container
+    .coffee-machine-slider
+      each item in coffeeMachines
+        .coffee-machine__block
+          .coffee-machine__info
+            .coffee-machine__block-caption
+              if item.coffeeGrinder
+                | Кофемолка <br />
+              else
+                | Кофемашина <br />
+              span.color-rose= item.name
+            ul.coffee-machine__list
+              for characteristics in item.characteristics
+                li= characteristics
+          .coffee-machine__img
+            img(src= item.img, alt= item.name)
+    .coffee-machine__block.coffee-machine__block_background-blue
+      | Готовьте капучино и латте с пышной вкусной пенкой в одно нажатие. Этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»
+
+      

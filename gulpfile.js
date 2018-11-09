@@ -14,7 +14,20 @@ var gulp = require("gulp"),
   rimraf = require("rimraf"),
   sourcemaps = require("gulp-sourcemaps"),
   reload = browserSync.reload,
+  gulpRename = require('gulp-rename'),
   gulpPug = require("gulp-pug");
+
+var fileNames = {
+  "new-coffee": "kofe-bez-kofeina-italyanskogo-brenda-hausbrandt",
+  "new-coffee-machines": "novinki-v-assortimente-kofemashin",
+  "news-page": "kofemashina-v-ofis",
+  "ristora": "rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods",
+  "cleaning-products": "sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin",
+  "article": "kofemashina-v-ofis",
+  "article1": "arenda-kofemashiny",
+  "article2": "kofe-v-ofis",
+  "about-tea": "sekrety-pravilnogo-zavarivaniya-chaya"
+}
 
 var path = {
   build: {
@@ -80,6 +93,9 @@ gulp.task("html:build", function() {
         locals: config
       })
     )
+    .pipe(gulpRename(function(path) {
+      path.basename = fileNames[path.basename];
+    }))
     .on("error", log)
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(path.build.html));
@@ -100,11 +116,11 @@ gulp.task("js:build", function() {
 gulp.task("style:build", function() {
   gulp
     .src(path.src.style)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(prefixer())
     .pipe(cssmin())
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
     .pipe(reload({ stream: true }));
 });

@@ -18,6 +18,9 @@
         left: rem(16);
         right: rem(16);
       }
+      &[href]:hover {
+        border-color: darken($border-color, 20%);
+      }
     }
     .features__item-caption {
       margin-bottom: 0;

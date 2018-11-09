@@ -1,0 +1,9 @@
+section.first-slide.first-slide_small(class= additionalFirstSlideClass ? additionalFirstSlideClass : "")
+  .container
+    if backBtn === true
+      a(href= backLink).back-btn
+        span.back-btn__icon
+          include ../img/back-arrow.svg
+        | Все новости
+    h1= firstSlideTitle
+    p.first-slide__descr= firstSlideDescr

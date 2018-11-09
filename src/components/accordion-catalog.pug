@@ -1,0 +1,16 @@
+mixin accordion-catalog(items)
+  each item in items
+    .office-catalog__section
+      .office-catalog__caption
+        if item.sectionName
+          span.features__section-name.section-name= item.sectionName
+        h2= item.sectionTitle
+      for catalogSection in item.catalog
+        .office-catalog__item
+          .office-catalog__item-caption.accordion= catalogSection.sectionName
+          .office-catalog__body.panel
+            for catalogItem in catalogSection.catalogItems
+              .office-catalog__body-item
+                .office-catalog__body-item-content
+                  .office-catalog__item-name!= catalogItem.name
+                  .office-catalog__item-price!= catalogItem.price

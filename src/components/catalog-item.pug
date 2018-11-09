@@ -1,0 +1,28 @@
+mixin catalog-item(item)
+  .coffee-catalog__caption
+    if item.sectionTitle
+      h2= item.sectionTitle
+    if item.sectionName
+      span.coffee-catalog__section-name.section-name= item.sectionName
+  .coffee-catalog__container
+    for catalogItem in item.catalogItems
+      .coffee-catalog__col
+        .coffee-catalog__item
+          .coffee-catalog__item-content
+            .coffee-catalog__block
+              .coffee-catalog__img
+                img(src= catalogItem.img ? catalogItem.img : "/img/coffee-catalog-item.jpg", alt= catalogItem.title)
+              if catalogItem.characteristics
+                .coffee-catalog__hover-block.coffee-descr
+                  for characteristic in catalogItem.characteristics
+                    p
+                      if characteristic.name
+                        span.bold= characteristic.name
+                      = characteristic.descr
+            .coffee-catalog__item-name= catalogItem.title
+            for priceItem in catalogItem.priceList
+              .coffee-catalog__row
+                .coffee-catalog__amount!= priceItem.amount
+                .coffee-catalog__price= priceItem.price
+          .coffee-catalog__footer
+            include ./buy-btn

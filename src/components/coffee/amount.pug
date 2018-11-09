@@ -1,0 +1,24 @@
+- 
+  var outputId = "output";
+  var inputId = "input";
+
+section.amount(class= amountAdditionalClass ? "amount_alt-bg" : "" )
+  .container
+    .amount__container
+      .amount__info
+        .amount__question Какой объём кофе вам&nbsp;нужен?
+        .amount__text От 10 рублей за кружку кофе.
+        include ../call-modal
+      .amount__range-block
+        .amount__row
+          .amount__range-caption Сколько человек в офисе?
+          output(id= outputId, for= inputId).amount__range-output 18
+        .amount__range.range
+          input(id= inputId, type="range", name="range", min="5", max="100", step="1", value="16")
+        .amount__range-info
+          .amount__amount-coffee
+            .amount__caption Объём кофе
+            .amount__value._value от 8 кг
+          .amount__price
+            .amount__caption Стоимость
+            .amount__value._price по договорённости

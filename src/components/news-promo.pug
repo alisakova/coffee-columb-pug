@@ -1,0 +1,15 @@
+mixin articles-list(items)
+  section.articles-list
+    .container
+      each item in items
+        .articles-list__item
+          .articles-list__img
+            img(src= item.img, alt= item.title)
+          .articles-list__info
+            .articles-list__content
+              h2= item.title
+              .articles-list__subtitle= item.subtitle
+              p.articles-list__text= item.text
+            .articles-list__footer
+              span.articles-list__date= item.date
+              a(href= item.link) Читать

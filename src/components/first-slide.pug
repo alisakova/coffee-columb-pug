@@ -1,0 +1,14 @@
+section.first-slide(class= additionalClass ? additionalClass : "")
+  .container
+    .first-slide__content
+      h1 !{firstSlideTitle} !{add}
+      p.first-slide__descr= firstSlideDescr
+      if btnContainer
+        .first-slide__btn-container
+          include ./call-modal
+          a(href="/catalog").btn.btn_white.btn_blue-color Каталог вкусов
+      else
+        include ./call-modal
+    if firstSlideImg
+      .first-slide__img
+        img(src= firstSlideImg, alt= firstSlideImgAlt)

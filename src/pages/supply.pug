@@ -1,0 +1,16 @@
+extends ../templates/base
+
+block variables 
+  -
+    var contacts = true;
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Снабжение";
+    var firstSlideDescr = "Важные мелочи для для вашего офиса";
+    var orderCallTitle = "Готовы собрать заказ?";
+    var additionalClass = "office"
+  
+block content
+  include ../components/first-slide-small
+  include ../components/supply/catalog
+  include ../components/order-call
+  include ../components/info

@@ -1,5 +1,5 @@
 .first-slide {
-  background: url("../img/index/first-slide-bg.png") no-repeat;
+  background: url("../img/index/first-slide-bg.jpg") no-repeat;
   background-size: cover;
   .container {
     max-width: rem(1126);
@@ -18,12 +18,11 @@
     }
   }
   &.food {
-    background: url("../img/food/first-slide-bg.png") no-repeat;
-    background-size: cover;
+    background-image: url("../img/food/first-slide-bg.jpg");
   }
   &.office {
-    background: url("../img/office/first-slide-bg.png") no-repeat;
-    background-size: cover;
+    background-image: url("../img/office/first-slide-bg.jpg");
+    background-position: right;
     .first-slide__content {
       padding-bottom: rem(175);
     }
@@ -94,7 +93,7 @@
   }
   .first-slide {
     &.office {
-      background-position-x: rem(-300);
+      background-position-x: rem(-150);
     }
   }
 }

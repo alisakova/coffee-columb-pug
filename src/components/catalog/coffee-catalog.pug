@@ -1,0 +1,12 @@
+include ../catalog-item
+section.coffee-catalog
+  .container
+    each item in mainCatalog
+      .coffee-catalog__section
+        if item.sections
+          for section in item.sections
+            +catalog-item(section)
+        else 
+          +catalog-item(item)
+          
+          

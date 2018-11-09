@@ -17,7 +17,7 @@
   }
   h2 {
     margin-bottom: rem(56);
-    font-size: rem(46);
+    font-size: rem(40);
     line-height: 1;
     text-align: left;
     letter-spacing: -1px;
@@ -67,6 +67,19 @@
     margin-bottom: rem(75);
     &_column {
       flex-direction: column;
+      .article__text-img {
+        margin-right: 0;
+      }
+    }
+    &_center {
+      align-items: center;
+      .article__text-img {
+        margin-bottom: rem(25);
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

@@ -98,6 +98,10 @@
   }
 }
 
+.coffee-catalog__price {
+  white-space: nowrap;
+}
+
 .coffee-catalog__footer {
   text-align: center;
   border-top: 1px solid $border-color;

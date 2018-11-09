@@ -1,0 +1,13 @@
+extends ../templates/base
+
+block variables 
+  -
+    var newsAndArticles = true;
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Обратная связь";
+    var firstSlideDescr = "Ответим на все вопросы, которые у вас могли остаться";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/contact/contact-form
+  include ../components/info

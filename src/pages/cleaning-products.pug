@@ -1,0 +1,18 @@
+extends ../templates/base
+
+block variables 
+  -
+    var newsAndArticles = true;
+    var backBtn = true;
+    var backLink = "/news";
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Средства для очистки и обслуживания кофемашин";
+    var firstSlideDescr = "1 ноября, 2018";
+    var additionalFirstSlideClass = "first-slide_article";
+  
+block content
+  include ../components/first-slide-small
+  include ../components/news-components/news-intro
+  include ../components/news-components/news-paragraph
+  include ../components/cleaning-products/news-body
+  include ../components/info

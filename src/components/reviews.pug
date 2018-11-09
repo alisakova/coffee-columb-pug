@@ -1,6 +1,6 @@
 -
   var sectionName = "Отзывы"
-  var title ="Что о нас говорят клиенты"
+  var sectionTitle ="Что о нас говорят клиенты"
   
 section.reviews
   .reviews__caption
@@ -8,8 +8,9 @@ section.reviews
   .reviews__slider.reviews-slider
     each review in reviewsSlides
       div
-        .reviews-slider__logo
-          img(src="/img/index/" + review.logo, alt= review.author)
+        if review.logo
+          .reviews-slider__logo
+            img(src="/img/index/" + review.logo, alt= review.author)
         .reviews-slider__descr
           .reviews-slider__company-name= review.author
-          p.reviews-slider__text= review.text
+          p.reviews-slider__text!= review.text

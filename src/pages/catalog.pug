@@ -1,0 +1,14 @@
+extends ../templates/base
+
+block variables 
+  -
+    var bodyClass = "internal-page";
+    var firstSlideTitle = "Кофе на любой вкус";
+    var firstSlideDescr = "38 сортов со всего мира. Попробуйте их все!";
+    var orderCallTitle = "Приходите на бесплатную дегустацию и узнайте какие сорта вам подходят"
+  
+block content
+  include ../components/first-slide-small
+  include ../components/catalog/coffee-catalog
+  - var additionalClass = "coffee"
+  include ../components/order-call
