@@ -34,7 +34,10 @@ block variables
     
 block content 
   include ../components/first-slide
-  - var amountAdditionalClass = "amount_alt-bg"
+  - 
+    var amountAdditionalClass = "amount_alt-bg"
+    var outputId = "output";
+    var inputId = "range";
   include ../components/coffee/amount
   include ../components/features
   include ../components/order-call
@@ -43,7 +46,7 @@ block content
   - 
     var amountAdditionalClass = "";
     var outputId = "output-2";
-    var inputId = "input-2";
+    var inputId = "range-2";
   include ../components/coffee/amount
   include ../components/reviews
   include ../components/info

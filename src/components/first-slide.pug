@@ -5,10 +5,10 @@ section.first-slide(class= additionalClass ? additionalClass : "")
       p.first-slide__descr= firstSlideDescr
       if btnContainer
         .first-slide__btn-container
-          include ./call-modal
+          include ./call-modal-btn
           a(href="/catalog").btn.btn_white.btn_blue-color Каталог вкусов
       else
-        include ./call-modal
+        include ./call-modal-btn
     if firstSlideImg
       .first-slide__img
         img(src= firstSlideImg, alt= firstSlideImgAlt)

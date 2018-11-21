@@ -50,31 +50,31 @@
   ],
   "newsSlides": [
     {
-      "link": "/cleaning-products",
+      "link": "/sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin",
       "title": "Средства для очистки и обслуживания кофемашин",
       "text":
         "Мы предлагаем средства для комплексной чистки и обслуживания кофемашин от отечественного бренда №1 CAFEDEM"
     },
     {
-      "link": "/ristora",
+      "link": "/rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods",
       "title": "Горячий шоколад итальянского бренда ProntoFoods",
       "text":
         "Ristora Cioccolata на каждый день – это ароматный горячий шоколад с насыщенным вкусом. Данный напиток создаёт шоколадную феерию в каждой чашке напитка."
     },
     {
-      "link": "/new-coffee",
+      "link": "/kofe-bez-kofeina-italyanskogo-brenda-hausbrandt",
       "title": "Кофе без кофеина итальянского бренда Hausbrandt",
       "text":
         "Сегодня под маркой HAUSBRANDT выпускается множество уникальных кофейных смесей с разными оттенками вкуса и аромата, с разной крепостью и бодрящими свойствами."
     },
     {
-      "link": "/new-coffee-machines",
+      "link": "/novinki-v-assortimente-kofemashin",
       "title": "Новинки в ассортименте кофемашин",
       "text":
         "Для приготовления того кофе, который Вам больше нравится, мы расширили ассортимент наших кофемашин."
     },
     {
-      "link": "/news-page",
+      "link": "/kofemashina-v-ofis",
       "title": "Мы добавили в ассортимент новую кофемашину Saeko Lirika Pro X",
       "text":
         "Новая кофемашина для аренды. Готовьте капучино, латте с пышной вкусной пенкой в одно нажатие. Именно этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»"
@@ -82,19 +82,19 @@
   ],
   "articlesList": [
     {
-      "link": "/about-tea",
+      "link": "/sekrety-pravilnogo-zavarivaniya-chaya",
       "title": "Секреты правильного заваривания чая"
     },
     {
-      "link": "/article2",
+      "link": "/kofe-v-ofis",
       "title": "Кофе в офис - как осуществляется услуга?"
     },
     {
-      "link": "/article1",
+      "link": "/arenda-kofemashiny",
       "title": "Аренда кофемашины в офис – грамотное решение для вашей компании"
     },
     {
-      "link": "/article",
+      "link": "/article-kofemashina-v-ofis",
       "title": "Кофемашина в офис"
     }
   ],
@@ -537,7 +537,7 @@
       "text":
         "Мы предлагаем средства для комплексной чистки и обслуживания кофемашин от отечественного бренда №1 CAFEDEM",
       "date": "1 ноября, 2018",
-      "link": "/cleaning-products"
+      "link": "/sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin"
     },
     {
       "img": "/img/ristora/img-2.jpg",
@@ -547,7 +547,7 @@
       "text":
         "Ristora Cioccolata на каждый день – это ароматный горячий шоколад с насыщенным вкусом. Данный напиток создаёт шоколадную феерию в каждой чашке напитка.",
       "date": "31 октября, 2018",
-      "link": "/ristora"
+      "link": "/rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods"
     },
     {
       "img": "/img/new-coffee/img-2.jpg",
@@ -557,7 +557,7 @@
       "text":
         "Сегодня под маркой HAUSBRANDT выпускается множество уникальных кофейных смесей с разными оттенками вкуса и аромата, с разной крепостью и бодрящими свойствами.",
       "date": "30 октября, 2018",
-      "link": "/new-coffee"
+      "link": "/kofe-bez-kofeina-italyanskogo-brenda-hausbrandt"
     },
     {
       "img": "/img/articles/new-article.jpg",
@@ -566,7 +566,7 @@
       "text":
         "Кофе тонизирует, бодрит и заряжает энергией, привносит яркие краски в нашу жизнь. Во многих странах мира этот напиток встречается повсеместно. Каждый сорт кофе готовится при своем температурном режиме и определенных условиях. Для приготовления того кофе, который Вам больше нравится, мы расширили ассортимент наших кофемашин.",
       "date": "18 сентября, 2018",
-      "link": "/new-coffee-machines"
+      "link": "/novinki-v-assortimente-kofemashin"
     },
     {
       "img": "/img/articles/article-2.jpg",
@@ -576,7 +576,7 @@
       "text":
         "Кофе в офис с арендой кофемашины станет хорошим решением для вашего офиса. От вас требуется одно – подобрать тариф и позвонить нам!",
       "date": "20 марта, 2018",
-      "link": "/news-page"
+      "link": "/kofemashina-v-ofis"
     }
   ],
   "articlesPromo": [
@@ -587,7 +587,7 @@
       "text":
         "Мы прекрасно понимаем, что не все люди пьют кофе или по крайней мере не всегда. Многие из вас предпочитают чай. В заваривании чая, как известно, есть свои нюансы, о них мы и расскажем в этой статье.",
       "date": "15 октября, 2018",
-      "link": "/about-tea"
+      "link": "/sekrety-pravilnogo-zavarivaniya-chaya"
     },
     {
       "img": "/img/articles/article-1.jpg",
@@ -596,7 +596,7 @@
       "text":
         "Аренда профессиональной кофемашины на выгодных условиях – выгодное решение для офиса. Звоните и заказывайте!",
       "date": "20 марта, 2018",
-      "link": "/article"
+      "link": "/article-kofemashina-v-ofis"
     },
     {
       "img": "/img/articles/article-2.jpg",
@@ -606,7 +606,7 @@
       "text":
         "Кофе в офис с арендой кофемашины станет хорошим решением для вашего офиса. От вас требуется одно – подобрать тариф и позвонить нам!",
       "date": "20 марта, 2018",
-      "link": "/article1"
+      "link": "/arenda-kofemashiny"
     },
     {
       "img": "/img/articles/article-1.jpg",
@@ -615,7 +615,7 @@
       "text":
         "Получите консультацию от специалиста нашей компании у вас в офисе!",
       "date": "20 марта, 2018",
-      "link": "/article2"
+      "link": "/kofe-v-ofis"
     }
   ],
   "mainCatalog": [

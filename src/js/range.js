@@ -4,8 +4,8 @@ var $price = $('._price');
 var $value = $('._value');
 var $input2 = $('#range-2');
 var $output2 = $('#output-2');
-var $price2 = $('._price-2');
-var $value2 = $('._value-2');
+// var $price2 = $('._price-2');
+// var $value2 = $('._value-2');
 
 $(document).ready(function() {
   if ($input.length) {
@@ -42,16 +42,16 @@ $(document).ready(function() {
     function updateOutput(value) {
       $output2[0].textContent = value;
       if (value >= 10) {
-        $value2[0].textContent = '~ 5 кг в месяц';
-        $price2[0].textContent = '7800 руб.'
+        $value[0].textContent = '~ 5 кг в месяц';
+        $price[0].textContent = '7800 руб.'
       }
       if (value >= 16) {
-        $value2[0].textContent = '~ от 8 кг';
-        $price2[0].textContent = 'по договорённости'
+        $value[0].textContent = '~ от 8 кг';
+        $price[0].textContent = 'по договорённости'
       }
       if (value < 10) {
-        $value2[0].textContent = '~ 3 кг в месяц';
-        $price2[0].textContent = '6000 руб.'
+        $value[0].textContent = '~ 3 кг в месяц';
+        $price[0].textContent = '6000 руб.'
       }
     }
 

@@ -66,168 +66,54 @@
       fill="#F3084E" />
     </svg>
   </a>
+  <div class="modal call-modal" id="call-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.2988" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#91A1BB" />
+      </svg>
+    </a>
+    <div class="call-modal__title">Понравилось предложение?</div>
+    <div class="call-modal__text">Оставьте заявку сейчас и оператор перезвонит в ближайшее время.</div>
+    <form class="call-modal__form form" id="request_form">
+      <div class="form__item">
+        <input class="form__input" type="tel" placeholder="+ 7 (999) 888-77-66" required>
+        <button class="call-modal__btn btn" type="submit">Отправить</button>
+      </div>
+    </form>
+    <div class="call-modal__after-submit-text" id="responde_data"></div>
+    <div class="call-modal__additional-text">Нажимая кнопку «Отправить» вы соглашаетесь с Политикой конфиденциальности. Если вы не любите оставлять номер — позвоните нам: <a href="tel:78126034911">7 (812) 603-4-911</a>
+    </div>
+  </div>
   <main>
     <section class="first-slide first-slide_small first-slide_article">
       <div class="container"><a class="back-btn" href="/news"><span class="back-btn__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M9.0101 16H6.9899V3.87879L1.43434 9.43434L0 8L8 0L16 8L14.5657 9.43434L9.0101 3.87879V16Z" transform="translate(0 16) rotate(-90)" fill="#91A1BB"/>
 </svg>
 </span>Все новости</a>
-        <h1>Секреты правильного заваривания чая</h1>
-        <p class="first-slide__descr">15 октября, 2018</p>
+        <h1>Аренда кофемашины</h1>
+        <p class="first-slide__descr">20 марта, 2018</p>
       </div>
     </section>
     <div class="article">
       <div class="container">
-        <div class="article__paragraph">
-          <div class="article__text">
-            <p>За исключением некоторых сортов, которые готовятся самобытным образом, схема заваривания для разных видов чая содержит аналогичные этапы. Однако каждый из них имеет свои нюансы, которые необходимо учитывать для того, чтобы вкус и аромат чайного
-              листа раскрылся наилучшим образом, а его ценные качества сохранились в полной мере.</p>
-          </div>
+        <div class="article__main-img">
+          <img src="/img/article/article-main-img.jpg" alt="Почему это так выгодно?">
         </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
+        <h2>Почему это так выгодно?</h2>
+        <div class="article__paragraph article__paragraph_with-img">
           <div class="article__text-img">
-            <img src="/img/about-tea/black-tea.jpg" alt="Черный чай">
+            <img src="/img/article/article-img-2.jpg" alt="Кофемашина">
           </div>
-          <h2>Черный чай</h2>
           <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 85°C ~ 100°C.</p>
-            <p><span class='bold'>Время заваривания</span> 3-5 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> 2 раза.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Если вода жесткая, то можно увеличить расход заварки в 1,5-2 раза, но не время заваривания. Иначе напиток получится излишне горьким.
-              <br />- Повторно заваривать можно только цельно-листовой черный чай.</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/green-tea.jpg" alt="Зеленый чай, белый чай, жасминовый чай">
-          </div>
-          <h2>Зеленый чай, белый чай, жасминовый чай</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 60°C ~ 85°C.</p>
-            <p><span class='bold'>Время заваривания</span> 1-3 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> 3-6 раз</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- С каждой следующей заваркой чай приобретает новый вкус.
-              <br />- Холодные чаи на основе зеленого скорее вредны, чем полезны.
-              <br />- Температура заваривания белого чая минимальна - 60°C ~ 70°C</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/alt-tea.jpg" alt="Связанный чай">
-          </div>
-          <h2>Связанный чай</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1 шарик</p>
-            <p><span class='bold'>Температура воды</span> – 80°C ~ 90°C.</p>
-            <p><span class='bold'>Время заваривания</span> 5-6 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> зависит от ингредиентов</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Для того, чтобы насладится чудесным зрелищем раскрытия цветка, лучше использовать прозрачную посуду;
-              <br />- В чайник сначала наливают воду, и только потом туда опускают фигурку, чтобы ее форма не была повреждена;
-              <br />- Возможность повторного заваривания необходимо уточнять у продавца – есть чаи, где это категорически запрещено, а есть такие, где цветок раскрывается только после 2-3 заварки.</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/carcade.jpg" alt="Каркадэ">
-          </div>
-          <h2>Каркадэ</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-4 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 0°C ~ 90°C.</p>
-            <p><span class='bold'>Время заваривания</span> от 5-6 мин до нескольких часов.</p>
-            <p><span class='bold'>Повторное заваривание</span> бессмысленно.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- В случае заваривания каркадэ горячей водой около 90°C норма заварки 1-2 ч. л. Чем холоднее вода, тем больше нужно заварки и тем более длительное времени она настаивается.
-              <br />- Отвар или настой можно не процеживать, а употреблять вместе с лепестками, поскольку они очень полезны.
-              <br />- Металлическая посуда полностью убивает вкус напитка из каркадэ!
-              <br />- Повторное заваривание бессмысленно, напиток получается водянистого синего цвета и не имеет ни вкуса, ни запаха, ни витаминов – он уже все отдал!</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/red-tea.jpg" alt="Красный китайский чай">
-          </div>
-          <h2>Красный китайский чай</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 95°C ~ 100°C.</p>
-            <p><span class='bold'>Время заваривания</span> 2-7 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> — 3-4 раза.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />Обязательно слить первую воду (этап промывки)!</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/fruit-tea.jpg" alt="Фруктовый чай">
-          </div>
-          <h2>Фруктовый чай</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 70°C ~ 100°C (в зависимости от основы чая).</p>
-            <p><span class='bold'>Время заваривания</span> 1-10 мин (в зависимости от основы чая).</p>
-            <p><span class='bold'>Повторное заваривание</span> — 2-3 раза.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Фруктовый чай без чайного листа не теряет своих свойств в холодном виде, его можно остужать прямо в заварнике и употреблять в качестве прохладительного напитка.</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/flower-tea.jpg" alt="Цветочный, травяной чай">
-          </div>
-          <h2>Цветочный, травяной чай</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 80°C ~ 100°C.</p>
-            <p><span class='bold'>Время заваривания</span> от 2-3 до 10-12 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> — от 2-3 до 6-7 раз.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Способ заваривания зависит от состава чая, поскольку для каждого растения дозировка, температура и время настаивания строго индивидуальны. Как правило, если в составе чая только листья и цветы, то достаточно 2-3 минут, семена и коренья
-              – 10-12 минут.
-              <br />- Чаи <span class='bold'>мате и ройбуш</span> заливаются на 6-7 минут очень горячей водой (90°C ~ 95°C) и выдерживают 5-7 повторных завариваний.</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/oolong-tea.jpg" alt="Улун">
-          </div>
-          <h2>Улун</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 85°C ~ 90°C.</p>
-            <p><span class='bold'>Время заваривания</span> 0,5-3 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> — 5-6 раз.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Если время настаивания даже незначительно увеличить, напиток начинает сильно горчить.
-              <br />- Первая заварка улуна – самая короткая (30-40 с), каждая последующая на 5-10 с дольше.</p>
-          </div>
-        </div>
-        <div class="article__paragraph article__paragraph_with-img article__paragraph_with-img_column">
-          <div class="article__text-img">
-            <img src="/img/about-tea/puer-tea.jpg" alt="Пуэр">
-          </div>
-          <h2>Пуэр</h2>
-          <div class="article__text">
-            <p><span class='bold'>Норма расхода на 200 мл</span> – 1-2 ч. л.</p>
-            <p><span class='bold'>Температура воды</span> – 85°C ~ 100°C.</p>
-            <p><span class='bold'>Время заваривания</span> 2-5 мин.</p>
-            <p><span class='bold'>Повторное заваривание</span> — 8-10 раз.</p>
-            <p><span class='bold'>Особенности:</span>
-              <br />- Промывка пауэра обязательна! Прессованный пауэр в «гнездах» необходимо предварительно поместить в холодную воду на 1-2 мин.
-              <br />- Чем дольше выдерживался чай, тем горячее должна быть вода и больше время для его заваривания. Для шу (черного) пауэра температура 100°C, время 5 минут, для шен (зеленого) - 85°C и 2 минуты соответственно.
-              <br />- Пуэр можно не только заваривать, но и варить. Самый простой рецепт – предварительно замоченный в холодной воде пауэр засыпать в только начинающую закипать воду (стадия «Рыбий глаз»), варить 1-2 минуты на сильном огне и после этого дать
-              еще 2-3 минуты настояться.
-              <br />- Если предварительно промытый шен пауэр залить холодной водой, то через 1-1,5 часа будет готов замечательный освежающий напиток.</p>
+            <p>Покупка хорошей кофемашины может обойтись в солидную денежную сумму. Аренда оборудования значительно дешевле, при этом включает бесплатное обслуживание в каждый тариф. Вам не придется тратить время на изучение тонкостей, связанных с эксплуатацией
+              аппарата. Ежемесячно к вам будет приезжать специалист и осуществлять чистку, декальцинацию и другие процедуры для того, чтобы поддерживать работу кофемашины в стабильном состоянии.</p>
           </div>
         </div>
         <div class="article__paragraph">
           <div class="article__text">
-            <p>Чай — уникальный напиток, по популярности своей едва ли отстающий от кофе. Желаем Вам приятного чаепития и отличного настроения!</p>
+            <p>Мы устанавливаем только качественное профессиональное оборудование, так как наша цель – обеспечить клиентов максимальным комфортом. Если аппарат выйдет из строя, то в кратчайшее время наша компания заменит его новым.</p>
+            <p>В случае, если вы купите кофемашину, то обслуживанием аппарата вам придется заниматься самостоятельно. На изучение всех тонкостей кофемашины может уйти немало времени. Для многих коммерческих компаний этот фактор является критичным, так как
+              придется тратить время сотрудников не на осуществление рабочих задач, а на тонкости взаимодействия с кофейным аппаратом.</p>
           </div>
         </div>
         <div class="article__mark">
@@ -242,19 +128,19 @@
             <div class="info__content">
               <div class="info__caption">Новости</div>
               <div class="info__news-content news-slider">
-                <div> <a class="info__news-caption" href="/cleaning-products">Средства для очистки и обслуживания кофемашин</a>
+                <div> <a class="info__news-caption" href="/sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin.html">Средства для очистки и обслуживания кофемашин</a>
                   <p class="info__news-text">Мы предлагаем средства для комплексной чистки и обслуживания кофемашин от отечественного бренда №1 CAFEDEM</p>
                 </div>
-                <div> <a class="info__news-caption" href="/ristora">Горячий шоколад итальянского бренда ProntoFoods</a>
+                <div> <a class="info__news-caption" href="/rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods.html">Горячий шоколад итальянского бренда ProntoFoods</a>
                   <p class="info__news-text">Ristora Cioccolata на каждый день – это ароматный горячий шоколад с насыщенным вкусом. Данный напиток создаёт шоколадную феерию в каждой чашке напитка.</p>
                 </div>
-                <div> <a class="info__news-caption" href="/new-coffee">Кофе без кофеина итальянского бренда Hausbrandt</a>
+                <div> <a class="info__news-caption" href="/kofe-bez-kofeina-italyanskogo-brenda-hausbrandt.html">Кофе без кофеина итальянского бренда Hausbrandt</a>
                   <p class="info__news-text">Сегодня под маркой HAUSBRANDT выпускается множество уникальных кофейных смесей с разными оттенками вкуса и аромата, с разной крепостью и бодрящими свойствами.</p>
                 </div>
-                <div> <a class="info__news-caption" href="/new-coffee-machines">Новинки в ассортименте кофемашин</a>
+                <div> <a class="info__news-caption" href="/novinki-v-assortimente-kofemashin.html">Новинки в ассортименте кофемашин</a>
                   <p class="info__news-text">Для приготовления того кофе, который Вам больше нравится, мы расширили ассортимент наших кофемашин.</p>
                 </div>
-                <div> <a class="info__news-caption" href="/news-page">Мы добавили в ассортимент новую кофемашину Saeko Lirika Pro X</a>
+                <div> <a class="info__news-caption" href="/kofemashina-v-ofis.html">Мы добавили в ассортимент новую кофемашину Saeko Lirika Pro X</a>
                   <p class="info__news-text">Новая кофемашина для аренды. Готовьте капучино, латте с пышной вкусной пенкой в одно нажатие. Именно этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»</p>
                 </div>
               </div>
@@ -267,13 +153,13 @@
               <div class="info__caption">Статьи</div>
               <div class="info__articles-info__content">
                 <ul class="info__articles-list">
-                  <li><a href="/about-tea">Секреты правильного заваривания чая</a>
+                  <li><a href="/sekrety-pravilnogo-zavarivaniya-chaya.html">Секреты правильного заваривания чая</a>
                   </li>
-                  <li><a href="/article2">Кофе в офис - как осуществляется услуга?</a>
+                  <li><a href="/kofe-v-ofis.html">Кофе в офис - как осуществляется услуга?</a>
                   </li>
-                  <li><a href="/article1">Аренда кофемашины в офис – грамотное решение для вашей компании</a>
+                  <li><a href="/arenda-kofemashiny.html">Аренда кофемашины в офис – грамотное решение для вашей компании</a>
                   </li>
-                  <li><a href="/article">Кофемашина в офис</a>
+                  <li><a href="/article-kofemashina-v-ofis.html">Кофемашина в офис</a>
                   </li>
                 </ul>
               </div>
@@ -334,31 +220,31 @@
         <div class="footer__col">
           <div class="footer__caption">Услуги</div>
           <ul class="footer__links-list">
-            <li><a href="/coffee">Кофе в офис</a>
+            <li><a href="/coffee.html">Кофе в офис</a>
             </li>
-            <li><a href="/food">Напитки и закуски</a>
+            <li><a href="/food.html">Напитки и закуски</a>
             </li>
-            <li><a href="/office">Канцелярия</a>
+            <li><a href="/office.html">Канцелярия</a>
             </li>
-            <li><a href="/supply">Снабжение</a>
+            <li><a href="/supply.html">Снабжение</a>
             </li>
           </ul>
         </div>
         <div class="footer__col">
           <div class="footer__caption">Информация</div>
           <ul class="footer__links-list">
-            <li><a href="/about">О компании</a>
+            <li><a href="/about.html">О компании</a>
             </li>
-            <li><a href="/contact">Обратная связь</a>
+            <li><a href="/contact.html">Обратная связь</a>
             </li>
           </ul>
         </div>
         <div class="footer__col">
           <div class="footer__caption">Полезное</div>
           <ul class="footer__links-list">
-            <li><a href="/articles">Статьи</a>
+            <li><a href="/articles.html">Статьи</a>
             </li>
-            <li><a href="/news">Новости</a>
+            <li><a href="/news.html">Новости</a>
             </li>
           </ul>
         </div>
@@ -412,11 +298,8 @@
   </footer>
   <!-- Yandex.Metrica Counter-->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
-  <script type="text/javascript">
-    VK.Widgets.Group("vk_groups", {mode: 4, width: 'auto', height: '400'}, 86720983);
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="/js/main.min.js"></script>
 </body>
 
 </html>

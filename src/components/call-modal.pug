@@ -1,4 +1,13 @@
-a(href="#call-modal", rel="modal:open").call-btn._call-btn
-  span.call-btn__icon
-    include ../img/call.svg
-  span Заказать звонок
+div(id="call-modal").modal.call-modal
+  a(href="", rel="modal:close").modal-close
+    include ../img/close.svg
+  .call-modal__title Понравилось предложение? 
+  .call-modal__text Оставьте заявку сейчас и оператор перезвонит в ближайшее время.
+  form(id="request_form").call-modal__form.form
+    .form__item
+      input(type="tel", placeholder="+ 7 (999) 888-77-66", required).form__input
+      button(type="submit").call-modal__btn.btn Отправить
+  div(id="responde_data").call-modal__after-submit-text
+  .call-modal__additional-text Нажимая кнопку «Отправить» вы соглашаетесь с Политикой конфиденциальности. Если вы не любите оставлять номер — позвоните нам: 
+    a(href="tel:78126034911") 7 (812) 603-4-911
+    

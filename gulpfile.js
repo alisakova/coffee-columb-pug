@@ -23,7 +23,7 @@ var fileNames = {
   "news-page": "kofemashina-v-ofis",
   "ristora": "rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods",
   "cleaning-products": "sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin",
-  "article": "kofemashina-v-ofis",
+  "article": "article-kofemashina-v-ofis",
   "article1": "arenda-kofemashiny",
   "article2": "kofe-v-ofis",
   "about-tea": "sekrety-pravilnogo-zavarivaniya-chaya"
@@ -94,7 +94,9 @@ gulp.task("html:build", function() {
       })
     )
     .pipe(gulpRename(function(path) {
-      path.basename = fileNames[path.basename];
+      if (fileNames[path.basename]) {
+        path.basename = fileNames[path.basename];
+      }
     }))
     .on("error", log)
     .pipe(prettify({indent_char: ' ', indent_size: 2}))

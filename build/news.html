@@ -66,6 +66,24 @@
       fill="#F3084E" />
     </svg>
   </a>
+  <div class="modal call-modal" id="call-modal">
+    <a class="modal-close" href="" rel="modal:close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.2988" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#91A1BB" />
+      </svg>
+    </a>
+    <div class="call-modal__title">Понравилось предложение?</div>
+    <div class="call-modal__text">Оставьте заявку сейчас и оператор перезвонит в ближайшее время.</div>
+    <form class="call-modal__form form" id="request_form">
+      <div class="form__item">
+        <input class="form__input" type="tel" placeholder="+ 7 (999) 888-77-66" required>
+        <button class="call-modal__btn btn" type="submit">Отправить</button>
+      </div>
+    </form>
+    <div class="call-modal__after-submit-text" id="responde_data"></div>
+    <div class="call-modal__additional-text">Нажимая кнопку «Отправить» вы соглашаетесь с Политикой конфиденциальности. Если вы не любите оставлять номер — позвоните нам: <a href="tel:78126034911">7 (812) 603-4-911</a>
+    </div>
+  </div>
   <main>
     <section class="first-slide first-slide_small">
       <div class="container">
@@ -85,7 +103,7 @@
               <div class="articles-list__subtitle">Жидкие и порошковые средства</div>
               <p class="articles-list__text">Мы предлагаем средства для комплексной чистки и обслуживания кофемашин от отечественного бренда №1 CAFEDEM</p>
             </div>
-            <div class="articles-list__footer"><span class="articles-list__date">1 ноября, 2018</span><a href="/cleaning-products">Читать</a>
+            <div class="articles-list__footer"><span class="articles-list__date">1 ноября, 2018</span><a href="/sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin.html">Читать</a>
             </div>
           </div>
         </div>
@@ -99,7 +117,7 @@
               <div class="articles-list__subtitle">Растворимый темный шоколад в банке Ristora Cioccolata In Tazza</div>
               <p class="articles-list__text">Ristora Cioccolata на каждый день – это ароматный горячий шоколад с насыщенным вкусом. Данный напиток создаёт шоколадную феерию в каждой чашке напитка.</p>
             </div>
-            <div class="articles-list__footer"><span class="articles-list__date">31 октября, 2018</span><a href="/ristora">Читать</a>
+            <div class="articles-list__footer"><span class="articles-list__date">31 октября, 2018</span><a href="/rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods.html">Читать</a>
             </div>
           </div>
         </div>
@@ -113,7 +131,7 @@
               <div class="articles-list__subtitle">Caffè HAUSBRANDT - детище одной из старейших компаний Италии, основанной более 120 лет назад.</div>
               <p class="articles-list__text">Сегодня под маркой HAUSBRANDT выпускается множество уникальных кофейных смесей с разными оттенками вкуса и аромата, с разной крепостью и бодрящими свойствами.</p>
             </div>
-            <div class="articles-list__footer"><span class="articles-list__date">30 октября, 2018</span><a href="/new-coffee">Читать</a>
+            <div class="articles-list__footer"><span class="articles-list__date">30 октября, 2018</span><a href="/kofe-bez-kofeina-italyanskogo-brenda-hausbrandt.html">Читать</a>
             </div>
           </div>
         </div>
@@ -128,7 +146,7 @@
               <p class="articles-list__text">Кофе тонизирует, бодрит и заряжает энергией, привносит яркие краски в нашу жизнь. Во многих странах мира этот напиток встречается повсеместно. Каждый сорт кофе готовится при своем температурном режиме и определенных условиях. Для приготовления
                 того кофе, который Вам больше нравится, мы расширили ассортимент наших кофемашин.</p>
             </div>
-            <div class="articles-list__footer"><span class="articles-list__date">18 сентября, 2018</span><a href="/new-coffee-machines">Читать</a>
+            <div class="articles-list__footer"><span class="articles-list__date">18 сентября, 2018</span><a href="/novinki-v-assortimente-kofemashin.html">Читать</a>
             </div>
           </div>
         </div>
@@ -142,7 +160,7 @@
               <div class="articles-list__subtitle">Аренда кофемашины в офис от компании 911office</div>
               <p class="articles-list__text">Кофе в офис с арендой кофемашины станет хорошим решением для вашего офиса. От вас требуется одно – подобрать тариф и позвонить нам!</p>
             </div>
-            <div class="articles-list__footer"><span class="articles-list__date">20 марта, 2018</span><a href="/news-page">Читать</a>
+            <div class="articles-list__footer"><span class="articles-list__date">20 марта, 2018</span><a href="/kofemashina-v-ofis.html">Читать</a>
             </div>
           </div>
         </div>
@@ -156,31 +174,31 @@
         <div class="footer__col">
           <div class="footer__caption">Услуги</div>
           <ul class="footer__links-list">
-            <li><a href="/coffee">Кофе в офис</a>
+            <li><a href="/coffee.html">Кофе в офис</a>
             </li>
-            <li><a href="/food">Напитки и закуски</a>
+            <li><a href="/food.html">Напитки и закуски</a>
             </li>
-            <li><a href="/office">Канцелярия</a>
+            <li><a href="/office.html">Канцелярия</a>
             </li>
-            <li><a href="/supply">Снабжение</a>
+            <li><a href="/supply.html">Снабжение</a>
             </li>
           </ul>
         </div>
         <div class="footer__col">
           <div class="footer__caption">Информация</div>
           <ul class="footer__links-list">
-            <li><a href="/about">О компании</a>
+            <li><a href="/about.html">О компании</a>
             </li>
-            <li><a href="/contact">Обратная связь</a>
+            <li><a href="/contact.html">Обратная связь</a>
             </li>
           </ul>
         </div>
         <div class="footer__col">
           <div class="footer__caption">Полезное</div>
           <ul class="footer__links-list">
-            <li><a href="/articles">Статьи</a>
+            <li><a href="/articles.html">Статьи</a>
             </li>
-            <li><a href="/news">Новости</a>
+            <li><a href="/news.html">Новости</a>
             </li>
           </ul>
         </div>
@@ -234,11 +252,8 @@
   </footer>
   <!-- Yandex.Metrica Counter-->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
-  <script type="text/javascript">
-    VK.Widgets.Group("vk_groups", {mode: 4, width: 'auto', height: '400'}, 86720983);
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="/js/main.min.js"></script>
 </body>
 
 </html>
