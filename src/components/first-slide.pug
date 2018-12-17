@@ -7,7 +7,9 @@ section.first-slide(class= additionalClass ? additionalClass : "")
         .first-slide__btn-container
           include ./call-modal-btn
           a(href="/catalog").btn.btn_white.btn_blue-color Каталог вкусов
-      else
+      else if coffeeModalBtn
+        include ./coffee-call-modal-btn
+      else 
         include ./call-modal-btn
     if firstSlideImg
       .first-slide__img

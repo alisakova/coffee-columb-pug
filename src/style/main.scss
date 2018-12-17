@@ -84,6 +84,15 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	font: {
+		size: rem(24);
+		weight: 500;
+	}
+	line-height: 1.33;
+	margin: 0 0 rem(24);
+}
+
 p {
 	font-size: rem(14);
 	line-height: 1.4;
@@ -185,3 +194,5 @@ img {
 @import "components/privacy-policy";
 @import "components/coffee-machine-slider";
 @import "components/footer";
+@import "components/machines-catalog";
+@import "components/descr-block";

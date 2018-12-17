@@ -1,0 +1,25 @@
+mixin descrBlock(item, index)
+  .descr-block
+    .descr-block__body 
+      .descr-block__img(class= "descr-block__img_" + index)
+        img(src="img/horeca/coffee-machine-" + index + ".png", alt= item.title)
+      .descr-block__content
+        h3= item.title
+        p= item.descr
+        include ../simple-call-btn
+    .descr-block__footer
+      .descr-block__col
+        .descr-block__subtitle Особенности
+        for text in item.features
+          p= text
+      .descr-block__col
+        .descr-block__subtitle Настройки
+        for text in item.settings
+          p= text
+      .descr-block__col  
+        .descr-block__subtitle Спецификации
+        for specification in item.specification
+          p.descr-block__row
+            span= specification.name
+            span!= specification.descr
+      
