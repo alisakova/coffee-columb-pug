@@ -141,7 +141,7 @@
   border-bottom-right-radius: rem(8);
   p {
     position: relative;
-    &:not(:last-child) {
+    &:not(:last-child):not(.descr-block__special-wrap) {
       margin-bottom: rem(8);
     }
   }
@@ -176,28 +176,33 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  // background: $gray-bg-color;
+  background: $gray-bg-color;
   span {
     position: relative;
-    z-index: 1;
-    // background: $gray-bg-color;
+    z-index: 2;
+    background: $gray-bg-color;
+    padding: 0 2px;
     & + span {
       text-align: right;
       white-space: nowrap;
     }
+    span {
+      padding: 0;
+    }
   }
   &:before {
     content: '';
-    z-index: 3;
+    z-index: 1;
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     width: 100%;
     height: 1px;
     line-height: 0;
-    border: {
-      style: solid;
-      width: 1px;
-      image: url("../img/dot.svg") 1 repeat;
-    }
+    background: url("../img/dot-pattern.svg") repeat-x;
   }
+}
+
+.descr-block__special-wrap {
+  padding: 0 2px;
+  margin: 0;
 }

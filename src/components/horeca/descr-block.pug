@@ -19,7 +19,13 @@ mixin descrBlock(item, index)
       .descr-block__col  
         .descr-block__subtitle Спецификации
         for specification in item.specification
-          p.descr-block__row
-            span= specification.name
-            span!= specification.descr
+          if specification.longText
+            p.descr-block__special-wrap= specification.firstPartOfName
+            p.descr-block__row
+              span= specification.secondPartOfName
+              span!= specification.descr
+          else
+            p.descr-block__row
+              span!= specification.name
+              span!= specification.descr
       

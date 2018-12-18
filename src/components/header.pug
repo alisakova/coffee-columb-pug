@@ -52,4 +52,7 @@ header.header.container
             li.dropdown__item
               a(href=linksItem.link)= linksItem.linkName
     .header__btn
-      include ../components/call-modal-btn
+      if additionalClass === "horeca"
+        include ../components/call-modal-btn
+      else 
+        a(href="/horeca").blue-btn HoReCa
