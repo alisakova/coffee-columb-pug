@@ -8,6 +8,26 @@
     margin-bottom: rem(32);
     letter-spacing: -1px;
   }
+  &.horeca {
+    background: $darken-gray-bg-color;
+    .first-slide__content {
+      max-width: 50rem;
+      padding: {
+        left: rem(112);
+        bottom: rem(150);
+      }
+    }
+    .container {
+      max-width: 96.57143rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .first-slide__img {
+      position: static;
+      max-width: rem(608);
+    }
+  }
   &.coffee {
     background: $darken-gray-bg-color;
     .first-slide__content {
@@ -99,6 +119,16 @@
 }
 
 @media (max-width: 992px) {
+  .first-slide {
+    &.horeca {
+      .first-slide__img {
+        transform: none;
+      }
+      .first-slide__content {
+        padding-left: 0;
+      }
+    }
+  }
   .first-slide__img {
     max-width: rem(400);
     top: 50%;
@@ -113,6 +143,13 @@
 }
 
 @media (max-width: 640px) {
+  .first-slide {
+    &.horeca {
+      .first-slide__img {
+        display: none;
+      }
+    }
+  }
   .first-slide__img {
     max-width: rem(300);
   }

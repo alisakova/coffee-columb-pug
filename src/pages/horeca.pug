@@ -3,14 +3,13 @@ extends ../templates/base
 block variables
   -
     var btnUp = true;
-    var additionalClass = "coffee";
+    var coffeeModalBtn = true;
     var contacts = true;
-    var btnContainer = true;
-    var firstSlideTitle = "Аренда кофемашины в&nbsp;офис за";
-    var add = "<span class='color-rose'>0 рублей.</span>";
+    var additionalClass = "horeca";
+    var firstSlideTitle = "Бесплатная аренда профессиональной кофемашины для HoReCa";
     var firstSlideDescr = "Платите только за кофе. От 10 рублей за кружку.";
-    var firstSlideImg = "/img/index/coffee.png";
-    var firstSlideImgAlt = "Аренда кофемашины";
+    var firstSlideImg = "/img/intro-horeca.png";
+    var firstSlideImgAlt = "Бесплатная аренда профессиональной кофемашины для HoReca";
     var sectionName = "это выгодно";
     var sectionTitle ="Платите только за кофе";
     var orderCallTitle = "Подберём кофейную смесь индивидуально под ваши вкусы";
@@ -27,26 +26,22 @@ block variables
       },
       {
         "icon": "/img/coffee/feature-3.svg",
-        "name": "Быстро",
+        "name": "Обслуживание бесплатно",
         "descr": "Техническое обслуживание, замена и ремонт по звонку"
       }
     ]
     
-block content 
+block content
+  include ../components/horeca/descr-block
   include ../components/first-slide
-  - 
-    var amountAdditionalClass = "amount_alt-bg"
-    var outputId = "output";
-    var inputId = "range";
-  include ../components/coffee/amount
+  -
+    var additionalClass = "coffee";
   include ../components/features
   include ../components/order-call
-  include ../components/coffee/coffee-machine
-  include ../components/coffee/catalog
-  - 
-    var amountAdditionalClass = "";
-    var outputId = "output-2";
-    var inputId = "range-2";
-  include ../components/coffee/amount
+  -
+    var sectionName = "простая эксплуатация и невысокая цена";
+    var sectionTitle = "Автоматические кофемашины";
+  include ../components/horeca/coffee-machines
   include ../components/reviews
   include ../components/info
+  

@@ -10,6 +10,13 @@
   justify-content: flex-start;
   align-items: center;
   max-width: rem(222);
+  &_horeca {
+    max-width: rem(272);
+    padding-right: rem(10);
+    .call-btn__icon {
+      margin-right: rem(12);
+    }
+  }
 }
 
 .call-btn__icon {
@@ -23,8 +30,27 @@
   margin-right: rem(16);
 }
 
+@media (max-width: 640px) {
+  .call-btn_horeca {
+    .call-btn__icon {
+      svg {
+        width: rem(24);
+        height: rem(24);
+      }
+    }
+  }  .call-btn__icon {
+      svg {
+        width: rem(20);
+        height: rem(20);
+      }
+    }
+}
+
 @media (max-width: 540px) {
   .call-btn {
     max-width: rem(230);
+    &_horeca {
+      max-width: rem(272);
+    }
   }
 }

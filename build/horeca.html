@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
-<body class="internal-page">
+<body>
   <header class="header container">
     <div class="header__left-col">
       <a class="header__logo" href="/index">
@@ -53,7 +53,10 @@
           </li>
         </ul>
       </div>
-      <div class="header__btn"><a class="blue-btn" href="/horeca">HoReCa</a>
+      <div class="header__btn"><a class="call-btn _call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447716 0.447754 0 1 0H4.5C5.05225 0 5.5 0.447716 5.5 1C5.5 2.25 5.69995 3.45 6.07007 4.57C6.17993 4.92 6.1001 5.31 5.82007 5.57L3.62012 7.78C5.06006 10.62 7.37988 12.93 10.21 14.37L12.4099 12.17C12.6899 11.9 13.0801 11.82 13.4299 11.93C14.55 12.3 15.75 12.5 17 12.5C17.5522 12.5 18 12.9477 18 13.5V17C18 17.2652 17.8945 17.5196 17.707 17.7071C17.5195 17.8946 17.2651 18 17 18C7.61108 18 0 10.3888 0 1ZM16 6.5V8H10V2H11.5V5.5L17 0L18 1L12.5 6.5H16Z" fill="#F3084E"/>
+</svg>
+</span><span>Заказать звонок</span></a>
       </div>
     </div>
   </header>
@@ -81,56 +84,278 @@
     <div class="call-modal__additional-text">Нажимая кнопку «Отправить» вы соглашаетесь с Политикой конфиденциальности. Если вы не любите оставлять номер — позвоните нам: <a href="tel:78126034911">7 (812) 603-4-911</a>
     </div>
   </div>
+  <div class="btn-up" onclick="scrollToTop();return false">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.0101 16H6.9899V3.87879L1.43434 9.43434L0 8L8 0L16 8L14.5657 9.43434L9.0101 3.87879V16Z" fill="white" />
+    </svg>
+
+  </div>
   <main>
-    <section class="first-slide first-slide_small">
+    <section class="first-slide horeca">
       <div class="container">
-        <h1>О компании</h1>
-        <p class="first-slide__descr">Мы обеспечиваем офисы и предприятия всем необходимым</p>
+        <div class="first-slide__content">
+          <h1>Бесплатная аренда профессиональной кофемашины для HoReCa </h1>
+          <p class="first-slide__descr">Платите только за кофе. От 10 рублей за кружку.</p><a class="call-btn call-btn_horeca _call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M19.8698 10.7616H18.8664V8.73874H2.31445V12.6272C2.31445 17.1905 6.02704 20.9031 10.5904 20.9031C13.498 20.9031 16.0599 19.3957 17.5364 17.1215H19.8697C21.6231 17.1215 23.0497 15.6949 23.0497 13.9415C23.0497 12.1882 21.6232 10.7616 19.8698 10.7616ZM19.8698 15.5562H18.3304C18.6763 14.6452 18.8664 13.658 18.8664 12.6272V12.3268H19.8698C20.7601 12.3268 21.4845 13.0511 21.4845 13.9415C21.4845 14.8319 20.7601 15.5562 19.8698 15.5562Z" fill="#F3084E"/>
+<path d="M20.231 22.4348H0.950195V24H20.231V22.4348Z" fill="#F3084E"/>
+<path d="M13.9402 4.07315C13.9402 3.78407 14.0017 3.68334 14.1365 3.4627C14.3161 3.16856 14.5621 2.76571 14.5621 2.03643C14.5621 1.3072 14.3161 0.904405 14.1364 0.610264C14.0017 0.389671 13.9402 0.288984 13.9402 0H12.375C12.375 0.729233 12.621 1.13208 12.8007 1.42617C12.9355 1.64676 12.9969 1.7474 12.9969 2.03639C12.9969 2.32546 12.9354 2.4262 12.8007 2.64684C12.621 2.94112 12.375 3.34392 12.375 4.07324C12.375 4.80252 12.621 5.20537 12.8007 5.49946C12.9354 5.7201 12.9969 5.82079 12.9969 6.10991H14.5621C14.5621 5.38063 14.3161 4.97779 14.1365 4.68365C14.0017 4.46296 13.9402 4.36227 13.9402 4.07315Z" fill="#F3084E"/>
+<path d="M8.18434 4.07315C8.18434 3.78407 8.24584 3.68334 8.38061 3.4627C8.56023 3.16856 8.80628 2.76571 8.80628 2.03643C8.80628 1.3072 8.56023 0.904405 8.38056 0.610264C8.2458 0.389671 8.18434 0.288984 8.18434 0H6.61914C6.61914 0.729233 6.86519 1.13208 7.04486 1.42617C7.17962 1.64676 7.24108 1.7474 7.24108 2.03639C7.24108 2.32546 7.17958 2.4262 7.04481 2.64684C6.86519 2.94112 6.61914 3.34392 6.61914 4.07324C6.61914 4.80252 6.86519 5.20537 7.04481 5.49946C7.17958 5.7201 7.24108 5.82079 7.24108 6.10991H8.80628C8.80628 5.38063 8.56023 4.97779 8.38061 4.68365C8.24584 4.46296 8.18434 4.36227 8.18434 4.07315Z" fill="#F3084E"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</span><span>Бесплатная дегустация</span></a>
+        </div>
+        <div class="first-slide__img">
+          <img src="/img/intro-horeca.png" alt="Бесплатная аренда профессиональной кофемашины для HoReca">
+        </div>
       </div>
     </section>
-    <section class="about-info">
+    <section class="features coffee">
       <div class="container">
-        <div class="about-info__content">
-          <div class="about-info__logo">
-            <img src="/img/big-logo.svg" alt="911office логотип">
+        <div class="features__caption"><span class="features__section-name section-name">это выгодно</span>
+          <h2>Платите только за кофе</h2>
+        </div>
+        <div class="features__container">
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="/img/coffee/feature-1.svg" alt="Преимущество">
+            </div>
+            <div class="features__item-caption">Пользуйтесь бесплатно</div>
+            <div class="features__descr">Аренда кофемашины — 0₽ при покупке от 5 кг кофе в месяц</div>
           </div>
-          <div class="about-info__info">
-            <div class="about-info__caption">Мы — компания 911office</div>
-            <p class="about-info__text">
-              Начиная свою работу в 2012 году, компания выбрала курс на предоставление высококачественных услуг и исключительного сервиса в сфере продажи кофе, кофейного оборудования и сопутствующих товаров. Данному курсу мы следуем и по сей день, что позволяет нам
-              удовлетворять запросы самых разных клиентов — от домохозяек до крупных сетевых компаний.
-            </p>
-            <div class="contacts">
-              <div class="contacts__contact">
-                <div class="contacts__icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47705 0 0 4.47705 0 10C0 12.6523 1.05347 15.1958 2.92896 17.0713C4.8042 18.9463 7.3479 20 10 20C12.6521 20 15.1958 18.9463 17.071 17.0713C18.9465 15.1958 20 12.6523 20 10C20 7.34766 18.9465 4.8042 17.071 2.92871C15.1958 1.05371 12.6521 0 10 0ZM10 18C5.58179 18 2 14.4185 2 10C2 5.58154 5.58179 2 10 2C12.1218 2 14.1565 2.84277 15.6567 4.34326C17.1572 5.84326 18 7.87842 18 10C18 14.4185 14.4182 18 10 18ZM10.6721 12.9888C9.1001 12.189 7.81104 10.8999 7.01123 9.32764L8.2334 8.10547C8.38892 7.9502 8.43335 7.7334 8.37231 7.53906C8.16675 6.9165 8.05566 6.25 8.05566 5.55566C8.05566 5.24854 7.80688 5 7.5 5H5.55566C5.4082 5 5.26685 5.05859 5.1626 5.1626C5.05859 5.26709 5 5.4082 5 5.55566C5 10.7715 9.22852 15 14.4443 15C14.7512 15 15 14.7515 15 14.4443V12.5C15 12.1934 14.7512 11.9443 14.4443 11.9443C13.75 11.9443 13.0833 11.8335 12.4612 11.6279C12.2666 11.5669 12.05 11.6113 11.8945 11.7666L10.6721 12.9888Z"
-                    fill="#F3084E" />
-                  </svg>
-
-                </div><a href="tel:+78126034911">7 (812) 603-4-911</a>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="/img/coffee/feature-2.svg" alt="Преимущество">
+            </div>
+            <div class="features__item-caption">38 сортов кофе</div>
+            <div class="features__descr">Поставляем только лучшие сорта кофе свежей обжарки</div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon">
+              <img src="/img/coffee/feature-3.svg" alt="Преимущество">
+            </div>
+            <div class="features__item-caption">Обслуживание бесплатно</div>
+            <div class="features__descr">Техническое обслуживание, замена и ремонт по звонку</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order-call coffee">
+      <h2>Подберём кофейную смесь индивидуально под ваши вкусы</h2><a class="call-btn _call-btn" href="#call-modal" rel="modal:open"><span class="call-btn__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447716 0.447754 0 1 0H4.5C5.05225 0 5.5 0.447716 5.5 1C5.5 2.25 5.69995 3.45 6.07007 4.57C6.17993 4.92 6.1001 5.31 5.82007 5.57L3.62012 7.78C5.06006 10.62 7.37988 12.93 10.21 14.37L12.4099 12.17C12.6899 11.9 13.0801 11.82 13.4299 11.93C14.55 12.3 15.75 12.5 17 12.5C17.5522 12.5 18 12.9477 18 13.5V17C18 17.2652 17.8945 17.5196 17.707 17.7071C17.5195 17.8946 17.2651 18 17 18C7.61108 18 0 10.3888 0 1ZM16 6.5V8H10V2H11.5V5.5L17 0L18 1L12.5 6.5H16Z" fill="#F3084E"/>
+</svg>
+</span><span>Заказать звонок</span></a>
+    </section>
+    <section class="machines-catalog">
+      <div class="container">
+        <div class="machines-catalog__caption"><span class="features__section-name section-name">простая эксплуатация и невысокая цена</span>
+          <h2>Автоматические кофемашины</h2>
+        </div>
+        <div class="machines-catalog__container">
+          <div class="descr-block">
+            <div class="descr-block__body">
+              <div class="descr-block__img descr-block__img_0">
+                <img src="img/horeca/coffee-machine-0.png" alt="Nuova Simonelli Appia II 2 Gr V">
               </div>
-              <div class="contacts__contact">
-                <div class="contacts__icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.05 2.9502C15.1001 1 12.75 0 10 0C7.25 0 4.8999 1 2.94995 2.9502C1 4.8999 0 7.25 0 10C0 12.75 1 15.1001 2.94995 17.0498C4.8999 19 7.25 20 10 20H15V18H10C7.81006 18 5.92993 17.23 4.3501 15.6499C2.77002 14.0698 2 12.1899 2 10C2 7.81006 2.77002 5.93018 4.3501 4.3501C5.92993 2.77002 7.81006 2 10 2C12.1899 2 14.0701 2.77002 15.6499 4.3501C17.23 5.93018 18 7.81006 18 10V11.4502C18 11.8599 17.8701 12.2202 17.5701 12.5298C17.27 12.8398 16.9199 13 16.5 13C16.1101 13 15.76 12.8398 15.46 12.5298C15.1599 12.2202 15 11.8599 15 11.4502V10C15 8.62988 14.5 7.4502 13.54 6.45996C12.55 5.5 11.3799 5 10 5C8.62988 5 7.44995 5.5 6.45996 6.45996C5.5 7.4502 5 8.62988 5 10C5 11.3799 5.5 12.5498 6.45996 13.54C7.44995 14.5 8.62988 15 10 15C11.3799 15 12.5601 14.5 13.5601 13.5C14.3101 14.5 15.3 15 16.5 15C17.5 15 18.3 14.6699 19 14C19.6499 13.2998 20 12.4502 20 11.4502V10C20 7.25 19 4.8999 17.05 2.9502ZM12.1101 12.1099C11.5 12.7002 10.8101 13 10 13C9.18994 13 8.5 12.7002 7.88989 12.1099C7.30005 11.5 7 10.8101 7 10C7 9.18994 7.30005 8.5 7.88989 7.89014C8.5 7.2998 9.18994 7 10 7C10.8101 7 11.5 7.2998 12.1101 7.89014C12.7 8.5 13 9.18994 13 10C13 10.8101 12.7 11.5 12.1101 12.1099Z"
-                    fill="#F3084E" />
-                  </svg>
-
-                </div><a href="mailtoinfo@911office.ru">info@911office.ru</a>
+              <div class="descr-block__content">
+                <h3>Nuova Simonelli Appia II 2 Gr V</h3>
+                <p>Рекомендуется для профессионального применения на предприятиях общественного питания с большим числом посетителей, например, в кафе и ресторанах или в специализированных кофейнях.</p><a class="btn _call-btn" href="#call-modal" rel="modal:open">Заказать</a>
               </div>
-              <div class="contacts__contact">
-                <div class="contacts__icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47705 4.47705 0 10 0C12.6521 0 15.1958 1.05371 17.071 2.92871C18.9465 4.8042 20 7.34766 20 10C20 12.6523 18.9465 15.1958 17.071 17.0713C15.1958 18.9463 12.6521 20 10 20C7.3479 20 4.8042 18.9463 2.92896 17.0713C1.05347 15.1958 0 12.6523 0 10ZM2 10C2 14.4185 5.58179 18 10 18C14.4182 18 18 14.4185 18 10C18 7.87842 17.1572 5.84326 15.6567 4.34326C14.1565 2.84277 12.1218 2 10 2C5.58179 2 2 5.58154 2 10ZM10 10.5C9.17163 10.5 8.5 9.82861 8.5 9C8.5 8.17139 9.17163 7.5 10 7.5C10.8284 7.5 11.5 8.17139 11.5 9C11.5 9.82861 10.8284 10.5 10 10.5ZM6.19995 9C6.19995 6.90039 7.8999 5.2002 10 5.2002C12.0999 5.2002 13.8 6.90039 13.8 9C13.8 12 10 15.5 10 15.5C10 15.5 6.19995 12 6.19995 9Z"
-                    fill="#F3084E" />
-                  </svg>
-
-                </div>
-                <div class="info__address">г.Санкт-Петербург, Митрофаньевское шоссе, 2 к.2, БЦ Малевич, офис 310</div>
+            </div>
+            <div class="descr-block__footer">
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Особенности</div>
+                <p>Используется молотый кофе.</p>
+                <p>Объема резервуара хватит на 366 эспрессо или 184 американо.</p>
+                <p>Есть ручное приготовление капучино.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Настройки</div>
+                <p>Контролируйте и регулируйте крепость и температуру кофе, порции горячей воды и степень помола.</p>
+                <p>Предварительное смачивание.</p>
+                <p>Быстрый пар.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Спецификации</div>
+                <p class="descr-block__row"><span>Тип</span><span>эспрессо</span>
+                </p>
+                <p class="descr-block__row"><span>Нагреватель</span><span>бойлер</span>
+                </p>
+                <p class="descr-block__row"><span>Размеры</span><span>78x53x54,5 см</span>
+                </p>
+                <p class="descr-block__row"><span>Макс. давление</span><span>15 бар</span>
+                </p>
+                <p class="descr-block__row"><span>Мощность</span><span>3220 Вт</span>
+                </p>
+                <p class="descr-block__row"><span>Вес</span><span>60 кг</span>
+                </p>
               </div>
             </div>
           </div>
+          <div class="descr-block">
+            <div class="descr-block__body">
+              <div class="descr-block__img descr-block__img_1">
+                <img src="img/horeca/coffee-machine-1.png" alt="Saeco Lirika">
+              </div>
+              <div class="descr-block__content">
+                <h3>Saeco Lirika</h3>
+                <p>Автоматическая кофемашина для офисного и домашнего использования, разработанная для сегмента HoReCa и офисов с большим потреблением кофе и высокими требованиями к качеству напитков.</p><a class="btn _call-btn" href="#call-modal" rel="modal:open">Заказать</a>
+              </div>
+            </div>
+            <div class="descr-block__footer">
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Особенности</div>
+                <p>Используется зерновой кофе.</p>
+                <p>Объема резервуара хватит на 83 эспрессо или 42 американо.</p>
+                <p>Есть ручное приготовление капучино.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Настройки</div>
+                <p>Контролируйте и регулируйте крепость кофе, порции горячей воды и узел выдачи кофе по высоте.</p>
+                <p>Предварительное смачивание.</p>
+                <p>Контейнер для отходов на 15 порций</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Спецификации</div>
+                <p class="descr-block__row"><span>Тип</span><span>эспрессо</span>
+                </p>
+                <p class="descr-block__row"><span>Нагреватель</span><span>бойлер</span>
+                </p>
+                <p class="descr-block__row"><span>Размеры</span><span>22x38x45 см</span>
+                </p>
+                <p class="descr-block__row"><span>Макс. давление</span><span>15 бар</span>
+                </p>
+                <p class="descr-block__row"><span>Мощность</span><span>1850 Вт</span>
+                </p>
+                <p class="descr-block__row"><span>Вес</span><span>8 кг</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__body">
+              <div class="descr-block__img descr-block__img_2">
+                <img src="img/horeca/coffee-machine-2.png" alt="Saeco Minuto">
+              </div>
+              <div class="descr-block__content">
+                <h3>Saeco Minuto</h3>
+                <p>Единственная кофемашина в своей ценовой категории, которая позволяет легко и быстро приготовить капучино всего одним нажатием</p><a class="btn _call-btn" href="#call-modal" rel="modal:open">Заказать</a>
+              </div>
+            </div>
+            <div class="descr-block__footer">
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Особенности</div>
+                <p>Используется молотый и зерновой кофе.</p>
+                <p>Объема резервуара хватит на 60 эспрессо или 30 американо.</p>
+                <p>Есть ручное приготовление капучино.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Настройки</div>
+                <p>Контролируйте и регулируйте крепость и температуру кофе, порции горячей воды и степень помола.</p>
+                <p>Предварительное смачивание.</p>
+                <p>Быстрый пар</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Спецификации</div>
+                <p class="descr-block__row"><span>Тип</span><span>эспрессо</span>
+                </p>
+                <p class="descr-block__row"><span>Нагреватель</span><span>бойлер</span>
+                </p>
+                <p class="descr-block__row"><span>Размеры</span><span>22x33x53 см</span>
+                </p>
+                <p class="descr-block__row"><span>Макс. давление</span><span>15 бар</span>
+                </p>
+                <p class="descr-block__row"><span>Мощность</span><span>1850 Вт</span>
+                </p>
+                <p class="descr-block__row"><span>Вес</span><span>7,5 кг</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__body">
+              <div class="descr-block__img descr-block__img_3">
+                <img src="img/horeca/coffee-machine-3.png" alt="Saeco Lirika OTC">
+              </div>
+              <div class="descr-block__content">
+                <h3>Saeco Lirika OTC</h3>
+                <p>Автоматическая кофемашина для офисного и домашнего использования, разработанная для сегмента HoReCa и офисов с большим потреблением кофе и высокими требованиями к качеству напитков.</p><a class="btn _call-btn" href="#call-modal" rel="modal:open">Заказать</a>
+              </div>
+            </div>
+            <div class="descr-block__footer">
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Особенности</div>
+                <p>Используется зерновой кофе.</p>
+                <p>Объема резервуара хватит на 83 эспрессо или 42 американо.</p>
+                <p>Есть ручное приготовление капучино.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Настройки</div>
+                <p>Контролируйте и регулируйте крепость кофе, порции горячей воды и узел выдачи кофе по высоте.</p>
+                <p>Предварительное смачивание.</p>
+                <p>Контейнер для отходов на 15 порций</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Спецификации</div>
+                <p class="descr-block__row"><span>Тип</span><span>эспрессо</span>
+                </p>
+                <p class="descr-block__row"><span>Нагреватель</span><span>бойлер</span>
+                </p>
+                <p class="descr-block__row"><span>Размеры</span><span>22x38x45 см</span>
+                </p>
+                <p class="descr-block__row"><span>Макс. давление</span><span>15 бар</span>
+                </p>
+                <p class="descr-block__row"><span>Мощность</span><span>1850 Вт</span>
+                </p>
+                <p class="descr-block__row"><span>Вес</span><span>8 кг</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__body">
+              <div class="descr-block__img descr-block__img_4">
+                <img src="img/horeca/coffee-machine-4.png" alt="Кофемолка FIORENZATO F 64 E">
+              </div>
+              <div class="descr-block__content">
+                <h3>Кофемолка FIORENZATO F 64 E</h3>
+                <p>Электронная кофемолка Fiorenzato F64E используется в кофейнях, барах, ресторанах, офисах и предназначена для равномерного помола и дозировки порций молотого кофе.​</p><a class="btn _call-btn" href="#call-modal" rel="modal:open">Заказать</a>
+              </div>
+            </div>
+            <div class="descr-block__footer">
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Особенности</div>
+                <p>Зерновая система помола.</p>
+                <p>Жернова 64 мм.</p>
+                <p>Дозатор</p>
+                <p>Счетчик порций.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Настройки</div>
+                <p>Регулируйте степень помола, просматривайте статистику работы кофемолки, процент влажности и температуру.</p>
+              </div>
+              <div class="descr-block__col">
+                <div class="descr-block__subtitle">Спецификации</div>
+                <p class="descr-block__row"><span>Тип</span><span>эспрессо</span>
+                </p>
+                <p class="descr-block__special-wrap">Макс. скорость</p>
+                <p class="descr-block__row"><span>давления</span><span>61550&nbsp;об/мин</span>
+                </p>
+                <p class="descr-block__row"><span>Размеры</span><span>23x61.5x27 см</span>
+                </p>
+                <p class="descr-block__row"><span>Мощность</span><span>350 Вт</span>
+                </p>
+                <p class="descr-block__row"><span>Вес</span><span>14 кг</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="machines-catalog__block">Готовьте капучино и латте с пышной вкусной пенкой в одно нажатие. Этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»</div>
         </div>
       </div>
     </section>
@@ -217,49 +442,6 @@
     <section class="info">
       <div class="container">
         <div class="info__container">
-          <div class="info__block info__block_size_m">
-            <div class="info__content">
-              <div class="info__caption">Новости</div>
-              <div class="info__news-content news-slider">
-                <div> <a class="info__news-caption" href="/sredstva-dlya-ochistki-i-obsluzhivaniya-kofemashin">Средства для очистки и обслуживания кофемашин</a>
-                  <p class="info__news-text">Мы предлагаем средства для комплексной чистки и обслуживания кофемашин от отечественного бренда №1 CAFEDEM</p>
-                </div>
-                <div> <a class="info__news-caption" href="/rastvorimyj-goryachij-shokolad-italyanskogo-brenda-prontofoods">Горячий шоколад итальянского бренда ProntoFoods</a>
-                  <p class="info__news-text">Ristora Cioccolata на каждый день – это ароматный горячий шоколад с насыщенным вкусом. Данный напиток создаёт шоколадную феерию в каждой чашке напитка.</p>
-                </div>
-                <div> <a class="info__news-caption" href="/kofe-bez-kofeina-italyanskogo-brenda-hausbrandt">Кофе без кофеина итальянского бренда Hausbrandt</a>
-                  <p class="info__news-text">Сегодня под маркой HAUSBRANDT выпускается множество уникальных кофейных смесей с разными оттенками вкуса и аромата, с разной крепостью и бодрящими свойствами.</p>
-                </div>
-                <div> <a class="info__news-caption" href="/novinki-v-assortimente-kofemashin">Новинки в ассортименте кофемашин</a>
-                  <p class="info__news-text">Для приготовления того кофе, который Вам больше нравится, мы расширили ассортимент наших кофемашин.</p>
-                </div>
-                <div> <a class="info__news-caption" href="/kofemashina-v-ofis">Мы добавили в ассортимент новую кофемашину Saeko Lirika Pro X</a>
-                  <p class="info__news-text">Новая кофемашина для аренды. Готовьте капучино, латте с пышной вкусной пенкой в одно нажатие. Именно этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»</p>
-                </div>
-              </div>
-            </div>
-            <div class="info__footer"><a href="/news">Смотреть все новости</a>
-            </div>
-          </div>
-          <div class="info__block info__block_size_m">
-            <div class="info__content">
-              <div class="info__caption">Статьи</div>
-              <div class="info__articles-info__content">
-                <ul class="info__articles-list">
-                  <li><a href="/sekrety-pravilnogo-zavarivaniya-chaya">Секреты правильного заваривания чая</a>
-                  </li>
-                  <li><a href="/kofe-v-ofis">Кофе в офис - как осуществляется услуга?</a>
-                  </li>
-                  <li><a href="/arenda-kofemashiny">Аренда кофемашины в офис – грамотное решение для вашей компании</a>
-                  </li>
-                  <li><a href="/article-kofemashina-v-ofis">Кофемашина в офис</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="info__footer"><a href="/articles">Читать все статьи </a>
-            </div>
-          </div>
           <div class="info__block info__block_flex">
             <div class="info__col">
               <div class="contacts info__contacts">

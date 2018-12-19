@@ -1,0 +1,46 @@
+.machines-catalog {
+  padding: {
+    top: rem(110);
+    bottom: rem(96);
+  }
+  background: $border-color;
+}
+
+.machines-catalog__caption {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  .section-name {
+    margin-bottom: rem(64);
+    @media (max-width: 540px) {
+      margin-bottom: 2.85714rem;
+    }
+  }
+  h2 {
+    margin-bottom: 0.85714rem;
+  }
+}
+
+.machines-catalog__block {
+  border-radius: rem(8);
+  box-shadow: 0 rem(16 24) rgba(145, 161, 187, 0.100006);
+  padding: rem(42) rem(80);
+  display: block;
+  background: $blue;
+  color: #fff;
+  font-size: rem(24);
+  line-height: 1.33;
+  text-align: center;
+  font-weight: 500;
+  max-width: rem(864);
+  margin: 0 auto;
+}
+
+@media (max-width: 540px) {
+  .machines-catalog {
+    padding: rem(32) 0;
+  }
+  .machines-catalog__block {
+    padding: rem(25);
+  }
+}

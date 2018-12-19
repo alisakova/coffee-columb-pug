@@ -1,0 +1,9 @@
+section.machines-catalog
+  .container
+    .machines-catalog__caption
+      include ../section-name
+    .machines-catalog__container
+      each item, index in horeca
+        +descrBlock(item, index)
+      .machines-catalog__block
+        | Готовьте капучино и латте с пышной вкусной пенкой в одно нажатие. Этот принцип лег в основу названия «One Touch Cappuccino» — «капучино в одно касание»
