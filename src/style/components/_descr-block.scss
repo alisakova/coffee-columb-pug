@@ -114,14 +114,14 @@
     }
   }
   &_2 {
-    max-width: rem(276);
-    margin-left: rem(64);
-    @media (max-width: 600px) {
-      margin-left: 0;
-    }
-  }
-  &_3 {
-    max-width: rem(280);
+    max-width: 19.71429rem;
+    margin-left: 4.57143rem;
+    & + .descr-block__content {
+      padding-bottom: rem(48);
+      @media (max-width: 600px) {
+        padding-bottom: 0;
+      }
+    } 
   }
   &_4 {
     max-width: rem(376);
