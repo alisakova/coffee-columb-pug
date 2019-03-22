@@ -16,10 +16,11 @@
   // min-width: rem(20);
   // height: rem(20);
   min-width: 20px;
+  max-width: 20px;
   margin-right: rem(12);
   svg {
     display: block;
-    width: 100%;
+    // width: 100%;
   }
 }
 
