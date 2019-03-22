@@ -100,7 +100,8 @@ gulp.task("html:build", function() {
     }))
     .on("error", log)
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
-    .pipe(gulp.dest(path.build.html));
+    .pipe(gulp.dest(path.build.html))
+    .pipe(reload({ stream: true }));
 });
 
 //собрать js
