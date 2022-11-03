@@ -18,7 +18,7 @@
   "homepage": "https://github.com/alisakova/coffee-columb-pug#readme",
   "devDependencies": {
     "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
